@@ -1,3 +1,9 @@
+    ## # A tibble: 2 x 1
+    ##   text                                                                     
+    ##   <chr>                                                                    
+    ## 1 "I'm the luckiest community manager! Mentoring this week for 2019 cohort…
+    ## 2 "@annakrystalli I'm in a room with @tbyhdgs where he's a Fellow at @TheC…
+
 ### Basic summary
 
 There were a total of **107** tweets with the \#CEFP2019 hashtag. These

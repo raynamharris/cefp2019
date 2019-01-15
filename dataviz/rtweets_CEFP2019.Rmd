@@ -29,6 +29,14 @@ rt <- search_tweets(
 )
 ```
 
+```{r fix tweet}
+rt %>% 
+  filter(screen_name == "StefanieButland") %>% 
+  select(text)
+```
+
+
+
 ### Basic summary
 
 There were a total of **`r nrow(rt)`** tweets with the #CEFP2019 hashtag. These tweets were authored by **`r length(unique(rt$screen_name))`** different particpants. 
