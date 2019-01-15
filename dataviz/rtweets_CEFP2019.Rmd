@@ -5,10 +5,11 @@ output: md_document
 ---
 
 ```{r setup, echo=FALSE, warning=F, message=F}
-## load rtweet and dplyr packages
+## load packages
 library(rtweet) # for fetching twitter data
 library(dplyr) # for filter and select
 library(tidyr) # for gather function
+library(knitr) # for pretty tables
 
 # set default code output to False
 knitr::opts_chunk$set(echo = F)
@@ -60,13 +61,15 @@ top5favs
 
 ### The 5 most retweeted tweets
 
-```{r topretweets}
+```{r topretweets, results='asis'}
 topretweets <- rt %>%
   top_n(5, retweet_count) %>%
   arrange(desc(retweet_count)) %>%
   select(screen_name, text)
 topretweets <- as.data.frame(topretweets)
 topretweets
+
+kable(topretweets)
 ```
 
 ### Top Tweeters
