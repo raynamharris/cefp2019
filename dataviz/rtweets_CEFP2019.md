@@ -3,9 +3,9 @@
 There were a total of **107** tweets with the \#CEFP2019 hashtag. These
 tweets were authored by **26** different particpants.
 
-![](rtweets_CEFP2019_figs/tweet_timeline-1.png)
-
 ![](rtweets_CEFP2019_figs/topusers-1.png)
+
+![](rtweets_CEFP2019_figs/tweet_timeline-1.png)
 
 ### The 5 most favorited tweets
 

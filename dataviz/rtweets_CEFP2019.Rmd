@@ -10,6 +10,7 @@ library(rtweet) # for fetching twitter data
 library(dplyr) # for filter and select
 library(tidyr) # for gather function
 library(knitr) # for pretty tables
+library(ggplot2) # for plotting
 
 # set default code output to False
 knitr::opts_chunk$set(echo = F)
@@ -27,7 +28,6 @@ knitr::opts_chunk$set(fig.path = 'rtweets_CEFP2019_figs/')
 rt <- search_tweets(
   "#CEFP2019", n = 18000, include_rts = FALSE
 )
-
 ```
 
 ```{r fix tweet}
@@ -36,26 +36,9 @@ rt[60, "text"] <- "I'm the luckiest community manager! Mentoring this week for 2
 ```
 
 
-
 ### Basic summary
 
 There were a total of **`r nrow(rt)`** tweets with the #CEFP2019 hashtag. These tweets were authored by **`r length(unique(rt$screen_name))`** different particpants. 
-
-
-```{r tweet_timeline}
-# tweet timeline
-ts_plot(rt, "2 hours") +
-  ggplot2::theme_minimal() +
-  ggplot2::theme(plot.title = ggplot2::element_text(face = "bold")) +
-  ggplot2::labs(
-    x = NULL, y = NULL,
-    title = "Frequency of #CEFP tweets",
-    subtitle = "Twitter status (tweet) counts aggregated using two-hour intervals",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet"
-  )
-
-```
-
 
 ```{r topusers}
 top_users <- rt %>%
@@ -73,9 +56,24 @@ ggplot(data = top_users) +
   theme(axis.text = element_text(size = 8),
   legend.text = element_text(size = 8)) + 
   labs(x = "User", y = NULL,
-    title = "Total number of #CEFP2019 Tweets",
+    title = "Total number of #CEFP2019 tweets by user",
     caption = "\nSource: Data collected from Twitter's REST API via rtweet")
 ```
+
+```{r tweet_timeline}
+# tweet timeline
+ts_plot(rt, "2 hours") +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(plot.title = ggplot2::element_text(face = "bold")) +
+  ggplot2::labs(
+    x = NULL, y = NULL,
+    title = "Frequency of #CEFP2019 tweets",
+    subtitle = "Total weet counts aggregated using two-hour intervals",
+    caption = "\nSource: Data collected from Twitter's REST API via rtweet"
+  )
+
+```
+
 
 ### The 5 most favorited tweets
 
