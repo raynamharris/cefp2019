@@ -3,7 +3,9 @@
 There were a total of **107** tweets with the \#CEFP2019 hashtag. These
 tweets were authored by **26** different particpants.
 
-![](rtweets_CEFP2019_files/figure-markdown_strict/tweet_timeline-1.png)
+![](rtweets_CEFP2019_figs/tweet_timeline-1.png)
+
+### The 5 most favorited tweets
 
     ##       screen_name
     ## 1    raynamharris
@@ -17,6 +19,45 @@ tweets were authored by **26** different particpants.
     ## 3                                                                                                                                At the end of an impeccable first day at #CEFP2019, and deeply appreciative of, among other things, the time, expertise and experiences that folk from #CEFP2017 have lent us today.
     ## 4                                                                                                                                                     Excited to be in Washington for the kick off meeting on community engagement in science @aaas #CEFP2019 #training #learning #newfriends https://t.co/9nsHEcaaqZ
     ## 5                                                                                                                                                                                                                        We're here, we're caffeinated and we're ready to kick off #CEFP2019! https://t.co/XJpO9jXrW4
+
+### The 5 most retweeted tweets
+
+    ##       screen_name
+    ## 1    raynamharris
+    ## 2 camisantistevan
+    ## 3       ah_bakker
+    ## 4        TheCSCCE
+    ## 5   Baker_aquatic
+    ## 6       serahrono
+    ##                                                                                                                                                                                                                                                                                                                               text
+    ## 1              This is a cool way to think about the stages conversation within communities. Early stages: one- or two-way conversations (convey and contribute). Later stages: collaboration and co-creation to generate novel ideas &amp; solutions to problems. From @LouWoodley at #CEFP2019 @TheCSCCE https://t.co/OvOV1SoQ5r
+    ## 2 Day 1 @aaas #CEFP2019: defined community, met our #CEFP2017 mentors, learned about community participation guides, mapped 4 types of scientific communities, heard lightning talks by @Baker_aquatic @quixoticroads @RockyRohde, and drafted community overview statements! Also  \u2615 &amp;\U0001f355 https://t.co/ezbvTgsYSH
+    ## 3                                                   First day of #CEFP2019 is a wrap! I met some fantastic people, learned about different kinds of scientific communities, and was inspired by @LouWoodley speaking on different stages of community growth. Eager to continue the conversation tomorrow. https://t.co/aJpHscDVSX
+    ## 4                                                      Meet Kate Baker! She's a Postdoctoral Research Fellow and Engagement Lead in the Centre for Water Systems at the University of Exeter, UK. You can find the fellows we're highlighting today here: https://t.co/bUfG7fMKLB @Baker_aquatic #CEFP2019 https://t.co/BpFVQ1I5SN
+    ## 5                                                                                                     .@rhappe @TheCR sharing the community engagement framework- a mechanism to #measure culture change. Comfort ➡️Connection ➡️Trust ➡️Partnership. “Manage the behaviour, not the content” @aaas #CEFP2019 https://t.co/jXMl3w5ADJ
+    ## 6                                                                                                                                             At the end of an impeccable first day at #CEFP2019, and deeply appreciative of, among other things, the time, expertise and experiences that folk from #CEFP2017 have lent us today.
+
+### Top Tweeters
+
+![](rtweets_CEFP2019_figs/topusers-1.png)
+
+### Impact
+
+The figures below only include users who created three or more original
+tweets.
+
+    ## # A tibble: 9 x 6
+    ##   screen_name     n_tweets n_fav  n_rt mean_fav mean_rt
+    ##   <chr>              <int> <int> <int>    <dbl>   <dbl>
+    ## 1 _jenshook              3    14     2     4.67   0.667
+    ## 2 ah_bakker              4    26     9     6.5    2.25 
+    ## 3 biotechchat            8    49    11     6.12   1.38 
+    ## 4 camisantistevan        4    53    12    13.2    3    
+    ## 5 indigoelectrons       14    59     7     4.21   0.5  
+    ## 6 LouWoodley            11    61     8     5.55   0.727
+    ## 7 raynamharris           3    76    35    25.3   11.7  
+    ## 8 RockyRohde             5    19     7     3.8    1.4  
+    ## 9 TheCSCCE              30   158    48     5.27   1.6
 
 ### Acknowledgment
 

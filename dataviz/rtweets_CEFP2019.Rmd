@@ -6,11 +6,16 @@ output: md_document
 
 ```{r setup, echo=FALSE, warning=F, message=F}
 ## load rtweet and dplyr packages
-library(rtweet)
-library(dplyr)
+library(rtweet) # for fetching twitter data
+library(dplyr) # for filter and select
+library(tidyr) # for gather function
 
 # set default code output to False
 knitr::opts_chunk$set(echo = F)
+
+# set figure directory
+knitr::opts_chunk$set(fig.path = 'rtweets_CEFP2019_figs/')
+
 ```
 
 
@@ -25,7 +30,7 @@ rt <- search_tweets(
 
 ### Basic summary
 
-There were a total of **`r nrow(rt)`** tweets with the #CEFP2019 hashtag. These tweets were authored by **`r length(unique(rt$screen_name))`** different particpants.
+There were a total of **`r nrow(rt)`** tweets with the #CEFP2019 hashtag. These tweets were authored by **`r length(unique(rt$screen_name))`** different particpants. 
 
 
 ```{r tweet_timeline}
@@ -42,9 +47,9 @@ ts_plot(rt, "2 hours") +
 
 ```
 
+### The 5 most favorited tweets
 
 ```{r top5favs}
-# top 5 favorited 
 top5favs <- rt %>%
   top_n(5, favorite_count) %>%
   arrange(desc(favorite_count)) %>%
@@ -53,7 +58,51 @@ top5favs <- as.data.frame(top5favs)
 top5favs
 ```
 
+### The 5 most retweeted tweets
 
+```{r topretweets}
+topretweets <- rt %>%
+  top_n(5, retweet_count) %>%
+  arrange(desc(retweet_count)) %>%
+  select(screen_name, text)
+topretweets <- as.data.frame(topretweets)
+topretweets
+```
+
+### Top Tweeters
+
+```{r topusers}
+top_users <- rt %>%
+    group_by(screen_name) %>%
+    summarize(total_tweets = n()) 
+
+ggplot(top_users) + 
+  geom_bar(aes(x = reorder(screen_name, total_tweets), y = total_tweets), 
+           stat = "identity") +
+  ylab("Number of tweets") + 
+  xlab("User") +
+  coord_flip() +
+  scale_fill_manual(values = wes_palette("Zissou1")[c(1, 3)]) +
+  theme_minimal() +
+  theme(axis.text = element_text(size = 8),
+  legend.text = element_text(size = 8))
+```
+
+### Impact 
+
+The figures below only include users who created three or more original tweets.
+
+```{r}
+impact <- rt %>%
+    group_by(screen_name) %>%
+    summarize(n_tweets = n(),
+              n_fav = sum(favorite_count),
+              n_rt =  sum(retweet_count),
+              mean_fav = mean(favorite_count),
+              mean_rt = mean(retweet_count)) %>%
+    filter(n_tweets >=  3)
+impact
+```
 
 ### Acknowledgment
 
