@@ -68,7 +68,7 @@ ts_plot(rt, "2 hours") +
   ggplot2::labs(
     x = NULL, y = NULL,
     title = "Frequency of #CEFP2019 tweets",
-    subtitle = "Total weet counts aggregated using two-hour intervals",
+    subtitle = "Total tweet counts aggregated using two-hour intervals",
     caption = "\nSource: Data collected from Twitter's REST API via rtweet"
   )
 
