@@ -139,10 +139,10 @@ most_fav$screen_name <- reorder(most_fav$screen_name,
                               most_fav$mean_fav,
                               sort)
 b <- ggplot(most_fav) +
-    geom_bar(aes(x = reorder(screen_name, n_fav), y = n_fav),
+    geom_bar(aes(x = reorder(screen_name, mean_fav), y = n_fav),
              stat = "identity", fill = "#01509D") +
     coord_flip() +  
-    geom_text(aes(label = n_fav, y = n_fav, x = screen_name),  
+    geom_text(aes(label = mean_fav, y = mean_fav, x = screen_name),  
             hjust=1, size = 2.5, color = "#E1E9E8") +
     theme_minimal() +
     theme(axis.text = element_text(size = 8),
