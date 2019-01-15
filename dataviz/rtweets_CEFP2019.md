@@ -21,7 +21,7 @@ tweets were authored by **26** different particpants.
 </tr>
 <tr class="even">
 <td style="text-align: left;">StefanieButland</td>
-<td style="text-align: left;">I’m the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows. I learn from <span class="citation" data-cites="rOpenSci">@rOpenSci</span> community, <span class="citation" data-cites="_inundata">@_inundata</span> <span class="citation" data-cites="sckottie">@sckottie</span> <span class="citation" data-cites="ma_salmon">@ma_salmon</span> <span class="citation" data-cites="opencpu">@opencpu</span> <span class="citation" data-cites="RLadiesGlobal">@RLadiesGlobal</span> <span class="citation" data-cites="bffo">@bffo</span> &amp; #CEFP2017 peers. Taking all the goodness back to them #CEFP2019.</td>
+<td style="text-align: left;">I’m the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows. I learn from <span class="citation" data-cites="rOpenSci">@rOpenSci</span> community, <span class="citation" data-cites="_inundata">@_inundata</span> <span class="citation" data-cites="sckottie">@sckottie</span> <span class="citation" data-cites="ma_salmon">@ma_salmon</span> <span class="citation" data-cites="opencpu">@opencpu</span> <span class="citation" data-cites="RLadiesGlobal">@RLadiesGlobal</span> <span class="citation" data-cites="bffo">@bffo</span> &amp; #CEFP2017 peers. Taking all the goodness back to them #CEFP2019. <a href="https://t.co/ybvfbV8RTX" class="uri">https://t.co/ybvfbV8RTX</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">serahrono</td>
