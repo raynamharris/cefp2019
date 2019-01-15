@@ -66,7 +66,7 @@ topretweets <- rt %>%
   top_n(5, retweet_count) %>%
   arrange(desc(retweet_count)) %>%
   select(screen_name, text)
-topretweets <- as.data.frame(topretweets)
+#topretweets <- as.data.frame(topretweets)
 topretweets
 
 kable(topretweets)
