@@ -47,37 +47,43 @@ tweets were authored by **27** different particpants.
 <tr class="header">
 <th style="text-align: left;">screen_name</th>
 <th style="text-align: left;">text</th>
+<th style="text-align: right;">retweet_count</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">raynamharris</td>
 <td style="text-align: left;">This is a cool way to think about the stages conversation within communities. Early stages: one- or two-way conversations (convey and contribute). Later stages: collaboration and co-creation to generate novel ideas &amp; solutions to problems. From <span class="citation" data-cites="LouWoodley">@LouWoodley</span> at #CEFP2019 <span class="citation" data-cites="TheCSCCE">@TheCSCCE</span> <a href="https://t.co/OvOV1SoQ5r" class="uri">https://t.co/OvOV1SoQ5r</a></td>
+<td style="text-align: right;">34</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">indigoelectrons</td>
 <td style="text-align: left;">There’s a growing body of research showing cultural inclusivity &amp; better representation of #WomenInScience increases <em>success</em> (big term I know), as if we needed more reasons to dismantle the current system rife with inequality. <span class="citation" data-cites="sondy">@sondy</span> #CEFP2019 <a href="https://t.co/U6JJnzHCHy" class="uri">https://t.co/U6JJnzHCHy</a></td>
+<td style="text-align: right;">10</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">camisantistevan</td>
 <td style="text-align: left;">Day 1 <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019: defined community, met our #CEFP2017 mentors, learned about community participation guides, mapped 4 types of scientific communities, heard lightning talks by <span class="citation" data-cites="Baker_aquatic">@Baker_aquatic</span> <span class="citation" data-cites="quixoticroads">@quixoticroads</span> <span class="citation" data-cites="RockyRohde">@RockyRohde</span>, and drafted community overview statements! Also ☕ &amp;🍕 <a href="https://t.co/ezbvTgsYSH" class="uri">https://t.co/ezbvTgsYSH</a></td>
+<td style="text-align: right;">6</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ah_bakker</td>
 <td style="text-align: left;">First day of #CEFP2019 is a wrap! I met some fantastic people, learned about different kinds of scientific communities, and was inspired by <span class="citation" data-cites="LouWoodley">@LouWoodley</span> speaking on different stages of community growth. Eager to continue the conversation tomorrow. <a href="https://t.co/aJpHscDVSX" class="uri">https://t.co/aJpHscDVSX</a></td>
+<td style="text-align: right;">6</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TheCSCCE</td>
 <td style="text-align: left;">Meet Kate Baker! She’s a Postdoctoral Research Fellow and Engagement Lead in the Centre for Water Systems at the University of Exeter, UK. You can find the fellows we’re highlighting today here: <a href="https://t.co/bUfG7fMKLB" class="uri">https://t.co/bUfG7fMKLB</a> <span class="citation" data-cites="Baker_aquatic">@Baker_aquatic</span> #CEFP2019 <a href="https://t.co/BpFVQ1I5SN" class="uri">https://t.co/BpFVQ1I5SN</a></td>
+<td style="text-align: right;">6</td>
 </tr>
 </tbody>
 </table>
 
 ### Which tweeters had the highest impact?
 
-![](rtweets_CEFP2019_figs/meanretweet-1.png)
-
 ![](rtweets_CEFP2019_figs/meanfav-1.png)
+
+![](rtweets_CEFP2019_figs/meanretweet-1.png)
 
 ### Acknowledgments
 
@@ -88,4 +94,6 @@ was adapted from François Michonneau’s
 that he used to create this [blog post about twitter statistics from
 Carpentry Con
 2018](https://carpentries.org/2018/06/carpentrycon-tweets). The
-[`rtweet` package](https://rtweet.info/) had excellent documentation.
+[`rtweet` package](https://rtweet.info/) had excellent documentation. I
+used [Image Color Picker](https://imagecolorpicker.com/) to obtain hex
+color codes following the CEFP color palette.

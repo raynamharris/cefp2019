@@ -11,6 +11,7 @@ library(dplyr) # for filter and select
 library(tidyr) # for gather function
 library(knitr) # for pretty tables
 library(ggplot2) # for plotting
+library(cowplot) # for multiplots
 
 # set default code output to False
 knitr::opts_chunk$set(echo = F)
@@ -47,7 +48,7 @@ top_users <- rt %>%
 
 ggplot(data = top_users) + 
   geom_bar(aes(x = reorder(screen_name, total_tweets), y = total_tweets), 
-           stat = "identity") +
+           stat = "identity", fill = "#505050") +
   geom_text(aes(label = total_tweets, y = total_tweets, x = screen_name),  
             hjust=0, size=3) +
   coord_flip() +
@@ -91,7 +92,7 @@ kable(top5favs)
 topretweets <- rt %>%
   top_n(5, retweet_count) %>%
   arrange(desc(retweet_count)) %>%
-  select(screen_name, text)
+  select(screen_name, text, retweet_count)
 kable(topretweets)
 ```
 
@@ -110,6 +111,70 @@ impact <- rt %>%
 #kable(impact)
 ```
 
+```{r mostfav}
+most_fav <- impact %>%
+    top_n(20, n_fav)
+most_fav$screen_name <- reorder(most_fav$screen_name,
+                              most_fav$mean_fav,
+                              sort)
+a <- ggplot(most_fav) +
+    geom_bar(aes(x = reorder(screen_name, n_fav), y = n_fav),
+             stat = "identity", fill = "#0C2939") +
+    coord_flip() +  
+    geom_text(aes(label = n_fav, y = n_fav, x = screen_name),  
+            hjust=1, size = 2.5, color = "#E1E9E8") +
+    theme_minimal() +
+    theme(axis.text = element_text(size = 8),
+          legend.text = element_text(size = 8)) +
+  labs(x = "User", y = NULL,
+    title = "Total #CEFP2019 favorites",
+    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+
+```
+
+```{r meanfav}
+most_fav <- impact %>%
+    top_n(20, n_fav)
+most_fav$screen_name <- reorder(most_fav$screen_name,
+                              most_fav$mean_fav,
+                              sort)
+b <- ggplot(most_fav) +
+    geom_bar(aes(x = reorder(screen_name, n_fav), y = n_fav),
+             stat = "identity", fill = "#01509D") +
+    coord_flip() +  
+    geom_text(aes(label = n_fav, y = n_fav, x = screen_name),  
+            hjust=1, size = 2.5, color = "#E1E9E8") +
+    theme_minimal() +
+    theme(axis.text = element_text(size = 8),
+          legend.text = element_text(size = 8)) +
+  labs(x = "User", y = NULL,
+    title = "Mean #CEFP2019 favorites",
+    caption = "\nSource: Data collected from Twitter's REST API via rtweet") 
+
+plot_grid(a,b)
+
+```
+
+```{r totalretweet}
+most_rt <- impact %>%
+    top_n(20, n_rt)
+most_rt$screen_name <- reorder(most_rt$screen_name,
+                              most_rt$n_rt,
+                              sort)
+c <- ggplot(most_rt) +
+    geom_bar(aes(x = reorder(screen_name, n_rt), y = n_rt),
+             stat = "identity", fill = "#005067") +
+    coord_flip() + 
+    geom_text(aes(label = n_rt, y = n_rt, x = screen_name),  
+            hjust=1, size = 2.5, color = "#E1E9E8") +
+    theme_minimal() +
+    theme(axis.text = element_text(size = 8),
+          legend.text = element_text(size = 8)) +
+  labs(x = "User", y = NULL,
+    title = "Total #CEFP2019 retweets",
+    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+```
+
 
 ```{r meanretweet}
 most_rt <- impact %>%
@@ -117,42 +182,22 @@ most_rt <- impact %>%
 most_rt$screen_name <- reorder(most_rt$screen_name,
                               most_rt$mean_rt,
                               sort)
-ggplot(most_rt) +
+d <- ggplot(most_rt) +
     geom_bar(aes(x = reorder(screen_name, mean_rt), y = mean_rt),
-             stat = "identity") +
+             stat = "identity", fill = "#00819E") +
     coord_flip() + 
     geom_text(aes(label = mean_rt, y = mean_rt, x = screen_name),  
-            hjust=0, size=3.5) +
+            hjust=1, size = 2, color = "#E1E9E8") +
     theme_minimal() +
-    theme(axis.text = element_text(size = 12),
-          legend.text = element_text(size = 12)) +
+    theme(axis.text = element_text(size = 8),
+          legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
-    title = "Mean number of #CEFP2019 retweets",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
-```
-
-```{r meanfav}
-most_rt <- impact %>%
-    top_n(20, mean_fav)
-most_rt$screen_name <- reorder(most_rt$screen_name,
-                              most_rt$mean_fav,
-                              sort)
-ggplot(most_rt) +
-    geom_bar(aes(x = reorder(screen_name, mean_fav), y = mean_fav),
-             stat = "identity") +
-    coord_flip() +  
-    geom_text(aes(label = mean_fav, y = mean_fav, x = screen_name),  
-            hjust=0, size=3.5) +
-    theme_minimal() +
-    theme(axis.text = element_text(size = 12),
-          legend.text = element_text(size = 12)) +
-  labs(x = "User", y = NULL,
-    title = "Mean number of #CEFP2019 favorites",
+    title = "Mean #CEFP2019 retweets",
     caption = "\nSource: Data collected from Twitter's REST API via rtweet")
 
+plot_grid(c,d)
 ```
-
 
 ### Acknowledgments
 
-My [source code](https://github.com/raynamharris/cefp2019/blob/master/dataviz/rtweets_CEFP2019.Rmd) was adapted from François Michonneau's [code](https://github.com/fmichonneau/2018-carpentrycon-tweets/blob/master/index.Rmd) that he used to create this [blog post about twitter statistics from Carpentry Con 2018](https://carpentries.org/2018/06/carpentrycon-tweets). The [`rtweet` package](https://rtweet.info/) had excellent documentation.
+My [source code](https://github.com/raynamharris/cefp2019/blob/master/dataviz/rtweets_CEFP2019.Rmd) was adapted from François Michonneau's [code](https://github.com/fmichonneau/2018-carpentrycon-tweets/blob/master/index.Rmd) that he used to create this [blog post about twitter statistics from Carpentry Con 2018](https://carpentries.org/2018/06/carpentrycon-tweets). The [`rtweet` package](https://rtweet.info/) had excellent documentation. I used [Image Color Picker](https://imagecolorpicker.com/) to obtain hex color codes following the CEFP color palette.
