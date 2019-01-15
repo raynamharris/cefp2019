@@ -56,27 +56,6 @@ ts_plot(rt, "2 hours") +
 
 ```
 
-### The 5 most favorited tweets
-
-```{r top5favs, results='asis'}
-top5favs <- rt %>%
-  top_n(5, favorite_count) %>%
-  arrange(desc(favorite_count)) %>%
-  select(screen_name, text)
-kable(top5favs)
-```
-
-### The 5 most retweeted tweets
-
-```{r topretweets, results='asis'}
-topretweets <- rt %>%
-  top_n(5, retweet_count) %>%
-  arrange(desc(retweet_count)) %>%
-  select(screen_name, text)
-kable(topretweets)
-```
-
-### Top Tweeters
 
 ```{r topusers}
 top_users <- rt %>%
@@ -98,9 +77,27 @@ ggplot(data = top_users) +
     caption = "\nSource: Data collected from Twitter's REST API via rtweet")
 ```
 
-### Impact 
+### The 5 most favorited tweets
 
-The figures below only include users who created three or more original tweets.
+```{r top5favs, results='asis'}
+top5favs <- rt %>%
+  top_n(5, favorite_count) %>%
+  arrange(desc(favorite_count)) %>%
+  select(screen_name, text)
+kable(top5favs)
+```
+
+### The 5 most retweeted tweets
+
+```{r topretweets, results='asis'}
+topretweets <- rt %>%
+  top_n(5, retweet_count) %>%
+  arrange(desc(retweet_count)) %>%
+  select(screen_name, text)
+kable(topretweets)
+```
+
+### Which tweeters had the highest impact?
 
 ```{r}
 impact <- rt %>%
@@ -112,11 +109,9 @@ impact <- rt %>%
               mean_rt = round(mean(retweet_count), digits = 2)) %>%
     filter(n_tweets >=  3) %>%
     arrange(-n_tweets)
-kable(impact)
-
+#kable(impact)
 ```
 
-#### Highest mean retweets
 
 ```{r meanretweet}
 most_rt <- impact %>%
@@ -137,8 +132,6 @@ ggplot(most_rt) +
     title = "Mean number of #CEFP2019 retweets",
     caption = "\nSource: Data collected from Twitter's REST API via rtweet")
 ```
-
-#### Highest mean favorites
 
 ```{r meanfav}
 most_rt <- impact %>%
