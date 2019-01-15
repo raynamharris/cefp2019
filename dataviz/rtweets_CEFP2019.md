@@ -1,6 +1,6 @@
 ### Basic summary
 
-There were a total of **112** tweets with the \#CEFP2019 hashtag. These
+There were a total of **113** tweets with the \#CEFP2019 hashtag. These
 tweets were authored by **27** different particpants.
 
 ![](rtweets_CEFP2019_figs/topusers-1.png)
@@ -34,8 +34,8 @@ tweets were authored by **27** different particpants.
 <td style="text-align: left;">Excited to be in Washington for the kick off meeting on community engagement in science <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019 #training #learning #newfriends <a href="https://t.co/9nsHEcaaqZ" class="uri">https://t.co/9nsHEcaaqZ</a></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">biotechchat</td>
-<td style="text-align: left;">We’re here, we’re caffeinated and we’re ready to kick off #CEFP2019! <a href="https://t.co/XJpO9jXrW4" class="uri">https://t.co/XJpO9jXrW4</a></td>
+<td style="text-align: left;">indigoelectrons</td>
+<td style="text-align: left;">There’s a growing body of research showing cultural inclusivity &amp; better representation of #WomenInScience increases <em>success</em> (big term I know), as if we needed more reasons to dismantle the current system rife with inequality. <span class="citation" data-cites="sondy">@sondy</span> #CEFP2019 <a href="https://t.co/U6JJnzHCHy" class="uri">https://t.co/U6JJnzHCHy</a></td>
 </tr>
 </tbody>
 </table>

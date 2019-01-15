@@ -32,7 +32,7 @@ rt <- search_tweets(
 
 ```{r fix tweet}
 # fix stephanie butland tweet
-rt[65, "text"] <- "I'm the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows. I learn from @rOpenSci community, @_inundata @sckottie @ma_salmon @opencpu @RLadiesGlobal @bffo &amp; #CEFP2017 peers. Taking all the goodness back to them #CEFP2019. https://t.co/ybvfbV8RTX"
+rt[66, "text"] <- "I'm the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows. I learn from @rOpenSci community, @_inundata @sckottie @ma_salmon @opencpu @RLadiesGlobal @bffo &amp; #CEFP2017 peers. Taking all the goodness back to them #CEFP2019. https://t.co/ybvfbV8RTX"
 ```
 
 
