@@ -7,33 +7,41 @@ tweets were authored by **26** different particpants.
 
 ### The 5 most favorited tweets
 
-    ##       screen_name
-    ## 1    raynamharris
-    ## 2 StefanieButland
-    ## 3       serahrono
-    ## 4   Baker_aquatic
-    ## 5     biotechchat
-    ##                                                                                                                                                                                                                                                                                                                  text
-    ## 1 This is a cool way to think about the stages conversation within communities. Early stages: one- or two-way conversations (convey and contribute). Later stages: collaboration and co-creation to generate novel ideas &amp; solutions to problems. From @LouWoodley at #CEFP2019 @TheCSCCE https://t.co/OvOV1SoQ5r
-    ## 2 I'm the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows \n\nI learn from @rOpenSci community, @_inundata @sckottie @ma_salmon @opencpu @RLadiesGlobal @bffo &amp; #CEFP2017 peers\n\nTaking all the goodness back to them\n\n#CEFP2019 https://t.co/ybvfbV8RTX
-    ## 3                                                                                                                                At the end of an impeccable first day at #CEFP2019, and deeply appreciative of, among other things, the time, expertise and experiences that folk from #CEFP2017 have lent us today.
-    ## 4                                                                                                                                                     Excited to be in Washington for the kick off meeting on community engagement in science @aaas #CEFP2019 #training #learning #newfriends https://t.co/9nsHEcaaqZ
-    ## 5                                                                                                                                                                                                                        We're here, we're caffeinated and we're ready to kick off #CEFP2019! https://t.co/XJpO9jXrW4
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">screen_name</th>
+<th style="text-align: left;">text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">raynamharris</td>
+<td style="text-align: left;">This is a cool way to think about the stages conversation within communities. Early stages: one- or two-way conversations (convey and contribute). Later stages: collaboration and co-creation to generate novel ideas &amp; solutions to problems. From <span class="citation" data-cites="LouWoodley">@LouWoodley</span> at #CEFP2019 <span class="citation" data-cites="TheCSCCE">@TheCSCCE</span> <a href="https://t.co/OvOV1SoQ5r" class="uri">https://t.co/OvOV1SoQ5r</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">StefanieButland</td>
+<td style="text-align: left;">I’m the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows</td>
+</tr>
+</tbody>
+</table>
+
+I learn from @rOpenSci community, @\_inundata @sckottie @ma\_salmon
+@opencpu @RLadiesGlobal @bffo & \#CEFP2017 peers
+
+Taking all the goodness back to them
+
+\#CEFP2019 <https://t.co/ybvfbV8RTX>  
+serahrono At the end of an impeccable first day at \#CEFP2019, and
+deeply appreciative of, among other things, the time, expertise and
+experiences that folk from \#CEFP2017 have lent us today.  
+Baker\_aquatic Excited to be in Washington for the kick off meeting on
+community engagement in science @aaas \#CEFP2019 \#training \#learning
+\#newfriends <https://t.co/9nsHEcaaqZ>  
+biotechchat We’re here, we’re caffeinated and we’re ready to kick off
+\#CEFP2019! <https://t.co/XJpO9jXrW4>
 
 ### The 5 most retweeted tweets
-
-A tibble: 6 x 2
-===============
-
-screen\_name text  
-<chr> <chr>  
-1 raynamharris This is a cool way to think about the stages conversati…
-2 camisantistevan Day 1 @aaas \#CEFP2019: defined community, met our
-\#CEFP… 3 ah\_bakker First day of \#CEFP2019 is a wrap! I met some
-fantastic … 4 TheCSCCE Meet Kate Baker! She’s a Postdoctoral Research
-Fellow a… 5 Baker\_aquatic .@rhappe @TheCR sharing the community
-engagement framew… 6 serahrono At the end of an impeccable first day at
-\#CEFP2019, and…
 
 <table>
 <thead>

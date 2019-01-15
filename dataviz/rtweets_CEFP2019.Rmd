@@ -50,13 +50,12 @@ ts_plot(rt, "2 hours") +
 
 ### The 5 most favorited tweets
 
-```{r top5favs}
+```{r top5favs, results='asis'}
 top5favs <- rt %>%
   top_n(5, favorite_count) %>%
   arrange(desc(favorite_count)) %>%
   select(screen_name, text)
-top5favs <- as.data.frame(top5favs)
-top5favs
+kable(top5favs)
 ```
 
 ### The 5 most retweeted tweets
@@ -66,9 +65,6 @@ topretweets <- rt %>%
   top_n(5, retweet_count) %>%
   arrange(desc(retweet_count)) %>%
   select(screen_name, text)
-#topretweets <- as.data.frame(topretweets)
-topretweets
-
 kable(topretweets)
 ```
 
