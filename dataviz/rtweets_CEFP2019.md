@@ -84,18 +84,100 @@ tweets were authored by **26** different particpants.
 The figures below only include users who created three or more original
 tweets.
 
-    ## # A tibble: 9 x 6
-    ##   screen_name     n_tweets n_fav  n_rt mean_fav mean_rt
-    ##   <chr>              <int> <int> <int>    <dbl>   <dbl>
-    ## 1 _jenshook              3    14     2     4.67   0.667
-    ## 2 ah_bakker              4    26     9     6.5    2.25 
-    ## 3 biotechchat            8    49    11     6.12   1.38 
-    ## 4 camisantistevan        4    53    12    13.2    3    
-    ## 5 indigoelectrons       14    59     7     4.21   0.5  
-    ## 6 LouWoodley            11    61     8     5.55   0.727
-    ## 7 raynamharris           3    76    35    25.3   11.7  
-    ## 8 RockyRohde             5    19     7     3.8    1.4  
-    ## 9 TheCSCCE              30   158    48     5.27   1.6
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">screen_name</th>
+<th style="text-align: right;">n_tweets</th>
+<th style="text-align: right;">n_fav</th>
+<th style="text-align: right;">n_rt</th>
+<th style="text-align: right;">mean_fav</th>
+<th style="text-align: right;">mean_rt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">TheCSCCE</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">158</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">5.27</td>
+<td style="text-align: right;">1.60</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">indigoelectrons</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4.21</td>
+<td style="text-align: right;">0.50</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LouWoodley</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5.55</td>
+<td style="text-align: right;">0.73</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">biotechchat</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">6.12</td>
+<td style="text-align: right;">1.38</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RockyRohde</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3.80</td>
+<td style="text-align: right;">1.40</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ah_bakker</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">6.50</td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">camisantistevan</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13.25</td>
+<td style="text-align: right;">3.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">_jenshook</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4.67</td>
+<td style="text-align: right;">0.67</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">raynamharris</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">25.33</td>
+<td style="text-align: right;">11.67</td>
+</tr>
+</tbody>
+</table>
+
+#### Highest mean retweets
+
+![](rtweets_CEFP2019_figs/meanretweet-1.png)
+
+#### Highest mean favorites
+
+![](rtweets_CEFP2019_figs/meanfav-1.png)
 
 ### Acknowledgment
 
