@@ -1,0 +1,154 @@
+---
+title: "A summary of the tweets generated at the 2019 CEFP workshop"
+author: "Rayna M Harris"
+output: md_document
+---
+
+```{r setup, echo=FALSE, warning=F, message=F}
+## load packages
+library(rtweet) # for fetching twitter data
+library(dplyr) # for filter and select
+library(tidyr) # for gather function
+library(knitr) # for pretty tables
+library(ggplot2) # for plotting
+
+# set default code output to False
+knitr::opts_chunk$set(echo = F)
+
+# set figure directory
+knitr::opts_chunk$set(fig.path = 'rtweets_rstudioconf_figs/')
+
+```
+
+
+```{r fetch tweets, message=F}
+## first, follow steps in <https://rtweet.info/> to setup API and relevant tokens
+
+## search for 18000 tweets using the rstats hashtag
+rt <- search_tweets(
+  "#rstudioconf  ", n = 18000, include_rts = FALSE, type = "mixed"
+)
+```
+
+
+### Basic summary
+
+There were a total of **`r nrow(rt)`** tweets with the #rstudioconf hashtag. These tweets were authored by **`r length(unique(rt$screen_name))`** different particpants. 
+
+```{r topusers}
+top_users <- rt %>%
+    group_by(screen_name) %>%
+    summarize(total_tweets = n()) %>%
+  filter(total_tweets > 3)
+
+ggplot(data = top_users) + 
+  geom_bar(aes(x = reorder(screen_name, total_tweets), y = total_tweets), 
+           stat = "identity") +
+  geom_text(aes(label = total_tweets, y = total_tweets, x = screen_name),  
+            hjust=0, size=3) +
+  coord_flip() +
+  scale_fill_manual(values = wes_palette("Zissou1")[c(1, 3)]) +
+  theme_minimal() +
+  theme(axis.text = element_text(size = 8),
+  legend.text = element_text(size = 8)) + 
+  labs(x = "User", y = NULL,
+    title = "Total number of #rstudioconf tweets by user",
+    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+```
+
+```{r tweet_timeline}
+# tweet timeline
+ts_plot(rt, "2 hours") +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(plot.title = ggplot2::element_text(face = "bold")) +
+  ggplot2::labs(
+    x = NULL, y = NULL,
+    title = "Frequency of #rstudioconf tweets",
+    subtitle = "Total weet counts aggregated using two-hour intervals",
+    caption = "\nSource: Data collected from Twitter's REST API via rtweet"
+  )
+
+```
+
+
+### The 5 most favorited tweets
+
+```{r top5favs, results='asis'}
+top5favs <- rt %>%
+  top_n(5, favorite_count) %>%
+  arrange(desc(favorite_count)) %>%
+  select(screen_name, text)
+kable(top5favs)
+```
+
+### The 5 most retweeted tweets
+
+```{r topretweets, results='asis'}
+topretweets <- rt %>%
+  top_n(5, retweet_count) %>%
+  arrange(desc(retweet_count)) %>%
+  select(screen_name, text)
+kable(topretweets)
+```
+
+### Which tweeters had the highest impact?
+
+```{r}
+impact <- rt %>%
+    group_by(screen_name) %>%
+    summarize(n_tweets = n(),
+              n_fav = sum(favorite_count),
+              n_rt =  sum(retweet_count),
+              mean_fav = round(mean(favorite_count), digits = 2),
+              mean_rt = round(mean(retweet_count), digits = 2)) %>%
+    filter(n_tweets >=  3) %>%
+    arrange(-n_tweets)
+#kable(impact)
+```
+
+
+```{r meanretweet}
+most_rt <- impact %>%
+    top_n(20, mean_rt)
+most_rt$screen_name <- reorder(most_rt$screen_name,
+                              most_rt$mean_rt,
+                              sort)
+ggplot(most_rt) +
+    geom_bar(aes(x = reorder(screen_name, mean_rt), y = mean_rt),
+             stat = "identity") +
+    coord_flip() + 
+    geom_text(aes(label = mean_rt, y = mean_rt, x = screen_name),  
+            hjust=0, size=3.5) +
+    theme_minimal() +
+    theme(axis.text = element_text(size = 12),
+          legend.text = element_text(size = 12)) +
+  labs(x = "User", y = NULL,
+    title = "Mean number of #rstudioconf retweets",
+    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+```
+
+```{r meanfav}
+most_rt <- impact %>%
+    top_n(20, mean_fav)
+most_rt$screen_name <- reorder(most_rt$screen_name,
+                              most_rt$mean_fav,
+                              sort)
+ggplot(most_rt) +
+    geom_bar(aes(x = reorder(screen_name, mean_fav), y = mean_fav),
+             stat = "identity") +
+    coord_flip() +  
+    geom_text(aes(label = mean_fav, y = mean_fav, x = screen_name),  
+            hjust=0, size=3.5) +
+    theme_minimal() +
+    theme(axis.text = element_text(size = 12),
+          legend.text = element_text(size = 12)) +
+  labs(x = "User", y = NULL,
+    title = "Mean number of #rstudioconf favorites",
+    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+
+```
+
+
+### Acknowledgments
+
+My [source code](https://github.com/raynamharris/cefp2019/blob/master/dataviz/rtweets_CEFP2019.Rmd) was adapted from François Michonneau's [code](https://github.com/fmichonneau/2018-carpentrycon-tweets/blob/master/index.Rmd) that he used to create this [blog post about twitter statistics from Carpentry Con 2018](https://carpentries.org/2018/06/carpentrycon-tweets). The [`rtweet` package](https://rtweet.info/) had excellent documentation.
