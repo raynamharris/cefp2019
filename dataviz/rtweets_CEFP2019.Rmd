@@ -133,13 +133,13 @@ a <- ggplot(most_fav) +
 ```
 
 ```{r meanfav}
-most_fav <- impact %>%
-    top_n(20, n_fav)
-most_fav$screen_name <- reorder(most_fav$screen_name,
-                              most_fav$mean_fav,
+mean_fav <- impact %>%
+    top_n(20, mean_fav)
+mean_fav$screen_name <- reorder(mean_fav$screen_name,
+                              mean_fav$mean_fav,
                               sort)
-b <- ggplot(most_fav) +
-    geom_bar(aes(x = reorder(screen_name, mean_fav), y = n_fav),
+b <- ggplot(mean_fav) +
+    geom_bar(aes(x = reorder(screen_name, mean_fav), y = mean_fav),
              stat = "identity", fill = "#01509D") +
     coord_flip() +  
     geom_text(aes(label = mean_fav, y = mean_fav, x = screen_name),  
