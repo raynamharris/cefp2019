@@ -83,9 +83,11 @@ tweets were authored by **26** different particpants.
 
 ![](rtweets_CEFP2019_figs/meanfav-1.png)
 
-### Acknowledgment
+### Acknowledgments
 
-This code was adapted from François Michonneau’s
+My [source
+code](https://github.com/raynamharris/cefp2019/blob/master/dataviz/rtweets_CEFP2019.Rmd)
+was adapted from François Michonneau’s
 [code](https://github.com/fmichonneau/2018-carpentrycon-tweets/blob/master/index.Rmd)
 that he used to create this [blog post about twitter statistics from
 Carpentry Con

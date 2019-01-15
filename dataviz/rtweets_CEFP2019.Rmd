@@ -152,6 +152,7 @@ ggplot(most_rt) +
 
 ```
 
-### Acknowledgment
 
-This code was adapted from François Michonneau's [code](https://github.com/fmichonneau/2018-carpentrycon-tweets/blob/master/index.Rmd) that he used to create this [blog post about twitter statistics from Carpentry Con 2018](https://carpentries.org/2018/06/carpentrycon-tweets). The [`rtweet` package](https://rtweet.info/) had excellent documentation.
+### Acknowledgments
+
+My [source code](https://github.com/raynamharris/cefp2019/blob/master/dataviz/rtweets_CEFP2019.Rmd) was adapted from François Michonneau's [code](https://github.com/fmichonneau/2018-carpentrycon-tweets/blob/master/index.Rmd) that he used to create this [blog post about twitter statistics from Carpentry Con 2018](https://carpentries.org/2018/06/carpentrycon-tweets). The [`rtweet` package](https://rtweet.info/) had excellent documentation.
