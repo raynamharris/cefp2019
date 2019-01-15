@@ -127,8 +127,7 @@ a <- ggplot(most_fav) +
     theme(axis.text = element_text(size = 8),
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
-    title = "Total #CEFP2019 favorites",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+    title = "Total #CEFP2019 favorites")
 
 ```
 
@@ -148,8 +147,7 @@ b <- ggplot(mean_fav) +
     theme(axis.text = element_text(size = 8),
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
-    title = "Mean #CEFP2019 favorites",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet") 
+    title = "Mean #CEFP2019 favorites") 
 
 plot_grid(a,b)
 
@@ -171,8 +169,7 @@ c <- ggplot(most_rt) +
     theme(axis.text = element_text(size = 8),
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
-    title = "Total #CEFP2019 retweets",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+    title = "Total #CEFP2019 retweets")
 ```
 
 
@@ -192,8 +189,7 @@ d <- ggplot(most_rt) +
     theme(axis.text = element_text(size = 8),
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
-    title = "Mean #CEFP2019 retweets",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+    title = "Mean #CEFP2019 retweets")
 
 plot_grid(c,d)
 ```
