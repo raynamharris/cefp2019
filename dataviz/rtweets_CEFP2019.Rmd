@@ -43,41 +43,16 @@ ts_plot(rt, "2 hours") +
 ```
 
 
-```{r top5fav}
+```{r top5favs}
 # top 5 favorited 
-rt %>%
+top5favs <- rt %>%
   top_n(5, favorite_count) %>%
   arrange(desc(favorite_count)) %>%
   select(screen_name, text)
+top5favs <- as.data.frame(top5favs)
+top5favs
 ```
 
-```{r top5favs}
-top_fav <- rt %>%
-    top_n(5, favorite_count) %>%
-    arrange(desc(favorite_count))
-
-render_tweet <- function(dt, row) {
-    screen_name <- dt$screen_name[i]
-    id <- format(dt$status_id[i], scientific = FALSE)
-    txt <- dt$text[i]
-    created <- format(dt$created_at[i], "%Y-%m-%d")
-    n_fav <- dt$favorite_count[i]
-    n_retweets <- dt$retweet_count[i]
-    cat("<blockquote class=\"twitter-tweet\" lang=\"en\"> \n",
-        "<p lang=\"en\" dir=\"ltr\">",
-        txt,
-        "</p>&mdash; ",
-        "<a href=\"https://twitter.com/", screen_name, "\">", screen_name, "</a>", "&nbsp;|&nbsp;",
-        "<a href=\"https://twitter.com/",
-        screen_name, "/status/", id, "\"> ", created, "</a> &nbsp;|&nbsp;",
-        n_retweets, " retweets, ",  n_fav, " favorites. </blockquote>",
-        "\n \n",
-        sep = "")
-}
-for (i in seq_len(nrow(top_fav))) {
-    render_tweet(top_fav, i)
-}
-```
 
 
 ### Acknowledgment
