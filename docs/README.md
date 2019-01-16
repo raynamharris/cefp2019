@@ -30,9 +30,7 @@
 
 ### Where
 
-New DCPPC members will receive an email with information about where and how to communicate online.  Check your email for this information, or visit our [on-boarding guide](https://pilot.nihdatacommons.us/organize/onboarding/onboarding-as-team-members/) _(access-restricted)_.
-
-Briefly, we use Slack to communicate in realtime, Groups.io for mailing lists, GitHub for project management, and Google Drive for document sharing. 
+New DCPPC members will receive an email with information about where and how to communicate online.  Check your email for this information, or visit our [on-boarding guide](https://pilot.nihdatacommons.us/organize/onboarding/onboarding-as-team-members/) _(access-restricted)_. Briefly, we use Slack to communicate in realtime, Groups.io for mailing lists, GitHub for project management, and Google Drive for document sharing. 
 
 ### Roadmap
 
