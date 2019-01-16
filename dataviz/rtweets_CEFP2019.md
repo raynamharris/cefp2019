@@ -1,7 +1,7 @@
 ### Basic summary
 
-There were a total of **113** tweets with the \#CEFP2019 hashtag. These
-tweets were authored by **27** different particpants.
+There were a total of **122** tweets with the \#CEFP2019 hashtag. These
+tweets were authored by **28** different particpants.
 
 ![](rtweets_CEFP2019_figs/topusers-1.png)
 
@@ -30,12 +30,12 @@ tweets were authored by **27** different particpants.
 <td style="text-align: left;">At the end of an impeccable first day at #CEFP2019, and deeply appreciative of, among other things, the time, expertise and experiences that folk from #CEFP2017 have lent us today.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Baker_aquatic</td>
-<td style="text-align: left;">Excited to be in Washington for the kick off meeting on community engagement in science <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019 #training #learning #newfriends <a href="https://t.co/9nsHEcaaqZ" class="uri">https://t.co/9nsHEcaaqZ</a></td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">indigoelectrons</td>
 <td style="text-align: left;">There’s a growing body of research showing cultural inclusivity &amp; better representation of #WomenInScience increases <em>success</em> (big term I know), as if we needed more reasons to dismantle the current system rife with inequality. <span class="citation" data-cites="sondy">@sondy</span> #CEFP2019 <a href="https://t.co/U6JJnzHCHy" class="uri">https://t.co/U6JJnzHCHy</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Baker_aquatic</td>
+<td style="text-align: left;">Excited to be in Washington for the kick off meeting on community engagement in science <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019 #training #learning #newfriends <a href="https://t.co/9nsHEcaaqZ" class="uri">https://t.co/9nsHEcaaqZ</a></td>
 </tr>
 </tbody>
 </table>
@@ -62,13 +62,13 @@ tweets were authored by **27** different particpants.
 <td style="text-align: right;">10</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">camisantistevan</td>
-<td style="text-align: left;">Day 1 <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019: defined community, met our #CEFP2017 mentors, learned about community participation guides, mapped 4 types of scientific communities, heard lightning talks by <span class="citation" data-cites="Baker_aquatic">@Baker_aquatic</span> <span class="citation" data-cites="quixoticroads">@quixoticroads</span> <span class="citation" data-cites="RockyRohde">@RockyRohde</span>, and drafted community overview statements! Also ☕ &amp;🍕 <a href="https://t.co/ezbvTgsYSH" class="uri">https://t.co/ezbvTgsYSH</a></td>
+<td style="text-align: left;">ah_bakker</td>
+<td style="text-align: left;">First day of #CEFP2019 is a wrap! I met some fantastic people, learned about different kinds of scientific communities, and was inspired by <span class="citation" data-cites="LouWoodley">@LouWoodley</span> speaking on different stages of community growth. Eager to continue the conversation tomorrow. <a href="https://t.co/aJpHscDVSX" class="uri">https://t.co/aJpHscDVSX</a></td>
 <td style="text-align: right;">6</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ah_bakker</td>
-<td style="text-align: left;">First day of #CEFP2019 is a wrap! I met some fantastic people, learned about different kinds of scientific communities, and was inspired by <span class="citation" data-cites="LouWoodley">@LouWoodley</span> speaking on different stages of community growth. Eager to continue the conversation tomorrow. <a href="https://t.co/aJpHscDVSX" class="uri">https://t.co/aJpHscDVSX</a></td>
+<td style="text-align: left;">camisantistevan</td>
+<td style="text-align: left;">Day 1 <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019: defined community, met our #CEFP2017 mentors, learned about community participation guides, mapped 4 types of scientific communities, heard lightning talks by <span class="citation" data-cites="Baker_aquatic">@Baker_aquatic</span> <span class="citation" data-cites="quixoticroads">@quixoticroads</span> <span class="citation" data-cites="RockyRohde">@RockyRohde</span>, and drafted community overview statements! Also ☕ &amp;🍕 <a href="https://t.co/ezbvTgsYSH" class="uri">https://t.co/ezbvTgsYSH</a></td>
 <td style="text-align: right;">6</td>
 </tr>
 <tr class="odd">
