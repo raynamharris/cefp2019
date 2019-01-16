@@ -9,8 +9,9 @@
 
 ### Members
 
-- [NIH funded team leaders](https://nihdatacommons.us/members/)
-	- [Team Contacts](https://public.nihdatacommons.us/TeamsOrganization/)
+- NIH funded teams 
+	- [Team leaders](https://nihdatacommons.us/members/)
+	- [Team contacts](https://public.nihdatacommons.us/TeamsOrganization/)
 	- [List of all NIH awardees](https://commonfund.nih.gov/commons/awardees)
 - [Data Stewards](https://commonfund.nih.gov/commons/testcasedatasets)
 
