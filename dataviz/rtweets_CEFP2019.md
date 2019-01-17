@@ -1,6 +1,6 @@
 ### Basic summary
 
-There were a total of **126** tweets with the \#CEFP2019 hashtag. These
+There were a total of **129** tweets with the \#CEFP2019 hashtag. These
 tweets were authored by **28** different particpants.
 
 ![](rtweets_CEFP2019_figs/topusers-1.png)
@@ -14,37 +14,37 @@ tweets were authored by **28** different particpants.
 <tr class="header">
 <th style="text-align: left;">screen_name</th>
 <th style="text-align: left;">text</th>
+<th style="text-align: right;">favorite_count</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">raynamharris</td>
 <td style="text-align: left;">This is a cool way to think about the stages conversation within communities. Early stages: one- or two-way conversations (convey and contribute). Later stages: collaboration and co-creation to generate novel ideas &amp; solutions to problems. From <span class="citation" data-cites="LouWoodley">@LouWoodley</span> at #CEFP2019 <span class="citation" data-cites="TheCSCCE">@TheCSCCE</span> <a href="https://t.co/OvOV1SoQ5r" class="uri">https://t.co/OvOV1SoQ5r</a></td>
+<td style="text-align: right;">57</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">StefanieButland</td>
-<td style="text-align: left;">I’m the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows</td>
+<td style="text-align: left;">I’m the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows. I learn from <span class="citation" data-cites="rOpenSci">@rOpenSci</span> community, <span class="citation" data-cites="_inundata">@_inundata</span> <span class="citation" data-cites="sckottie">@sckottie</span> <span class="citation" data-cites="ma_salmon">@ma_salmon</span> <span class="citation" data-cites="opencpu">@opencpu</span> <span class="citation" data-cites="RLadiesGlobal">@RLadiesGlobal</span> <span class="citation" data-cites="bffo">@bffo</span> &amp; #CEFP2017 peers. Taking all the goodness back to them #CEFP2019. <a href="https://t.co/ybvfbV8RTX" class="uri">https://t.co/ybvfbV8RTX</a></td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">serahrono</td>
+<td style="text-align: left;">At the end of an impeccable first day at #CEFP2019, and deeply appreciative of, among other things, the time, expertise and experiences that folk from #CEFP2017 have lent us today.</td>
+<td style="text-align: right;">29</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">indigoelectrons</td>
+<td style="text-align: left;">There’s a growing body of research showing cultural inclusivity &amp; better representation of #WomenInScience increases <em>success</em> (big term I know), as if we needed more reasons to dismantle the current system rife with inequality. <span class="citation" data-cites="sondy">@sondy</span> #CEFP2019 <a href="https://t.co/U6JJnzHCHy" class="uri">https://t.co/U6JJnzHCHy</a></td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Baker_aquatic</td>
+<td style="text-align: left;">Excited to be in Washington for the kick off meeting on community engagement in science <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019 #training #learning #newfriends <a href="https://t.co/9nsHEcaaqZ" class="uri">https://t.co/9nsHEcaaqZ</a></td>
+<td style="text-align: right;">25</td>
 </tr>
 </tbody>
 </table>
-
-I learn from @rOpenSci community, @\_inundata @sckottie @ma\_salmon
-@opencpu @RLadiesGlobal @bffo & \#CEFP2017 peers
-
-Taking all the goodness back to them
-
-\#CEFP2019 <https://t.co/ybvfbV8RTX>  
-serahrono At the end of an impeccable first day at \#CEFP2019, and
-deeply appreciative of, among other things, the time, expertise and
-experiences that folk from \#CEFP2017 have lent us today.  
-indigoelectrons There’s a growing body of research showing cultural
-inclusivity & better representation of \#WomenInScience increases
-*success* (big term I know), as if we needed more reasons to dismantle
-the current system rife with inequality. @sondy \#CEFP2019
-<https://t.co/U6JJnzHCHy>  
-Baker\_aquatic Excited to be in Washington for the kick off meeting on
-community engagement in science @aaas \#CEFP2019 \#training \#learning
-\#newfriends <https://t.co/9nsHEcaaqZ>
 
 ### The 5 most retweeted tweets
 

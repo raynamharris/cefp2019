@@ -33,7 +33,7 @@ rt <- search_tweets(
 
 ```{r fix tweet}
 # fix stephanie butland tweet
-rt[77, "text"] <- "I'm the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows. I learn from @rOpenSci community, @_inundata @sckottie @ma_salmon @opencpu @RLadiesGlobal @bffo &amp; #CEFP2017 peers. Taking all the goodness back to them #CEFP2019. https://t.co/ybvfbV8RTX"
+rt[86, "text"] <- "I'm the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows. I learn from @rOpenSci community, @_inundata @sckottie @ma_salmon @opencpu @RLadiesGlobal @bffo &amp; #CEFP2017 peers. Taking all the goodness back to them #CEFP2019. https://t.co/ybvfbV8RTX"
 ```
 
 
@@ -63,13 +63,13 @@ ggplot(data = top_users) +
 
 ```{r tweet_timeline}
 # tweet timeline
-ts_plot(rt, "2 hours") +
+ts_plot(rt, "3 hours") +
   ggplot2::theme_minimal() +
   ggplot2::theme(plot.title = ggplot2::element_text(face = "bold")) +
   ggplot2::labs(
     x = NULL, y = NULL,
     title = "Frequency of #CEFP2019 tweets",
-    subtitle = "Total tweet counts aggregated using two-hour intervals",
+    subtitle = "Total tweet counts aggregated using three-hour intervals",
     caption = "\nSource: Data collected from Twitter's REST API via rtweet"
   )
 
@@ -82,7 +82,7 @@ ts_plot(rt, "2 hours") +
 top5favs <- rt %>%
   top_n(5, favorite_count) %>%
   arrange(desc(favorite_count)) %>%
-  select(screen_name, text)
+  select(screen_name, text, favorite_count)
 kable(top5favs)
 ```
 
