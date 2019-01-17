@@ -80,7 +80,7 @@ ts_plot(rt, "3 hours") +
 
 ```{r top5favs, results='asis'}
 top5favs <- rt %>%
-  top_n(5, favorite_count) %>%
+  top_n(10, favorite_count) %>%
   arrange(desc(favorite_count)) %>%
   select(screen_name, text, favorite_count)
 kable(top5favs)

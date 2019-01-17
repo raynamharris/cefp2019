@@ -43,6 +43,36 @@ tweets were authored by **28** different particpants.
 <td style="text-align: left;">Excited to be in Washington for the kick off meeting on community engagement in science <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019 #training #learning #newfriends <a href="https://t.co/9nsHEcaaqZ" class="uri">https://t.co/9nsHEcaaqZ</a></td>
 <td style="text-align: right;">25</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">biotechchat</td>
+<td style="text-align: left;">We’re here, we’re caffeinated and we’re ready to kick off #CEFP2019! <a href="https://t.co/XJpO9jXrW4" class="uri">https://t.co/XJpO9jXrW4</a></td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">raynamharris</td>
+<td style="text-align: left;">I made it to DC for #CEFP2019 training! But first, I took <span class="citation" data-cites="serahrono">@serahrono</span> to see <span class="citation" data-cites="therevivalists">@therevivalists</span>. Nothing like a little live music to kickstart a new <span class="citation" data-cites="thecarpentries">@thecarpentries</span> relationship. #allmyfriendstakegoodcareofme <a href="https://t.co/NbpQ6PVy9Y" class="uri">https://t.co/NbpQ6PVy9Y</a></td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">camisantistevan</td>
+<td style="text-align: left;">Let’s get to work! <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019 <a href="https://t.co/jwoNSzuHAt" class="uri">https://t.co/jwoNSzuHAt</a></td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LouWoodley</td>
+<td style="text-align: left;">Go, CEFP! Group photo of #CEFP2019 fellows, mentors from #cefp2017 and <span class="citation" data-cites="TheCSCCE">@TheCSCCE</span> staff ❤️ <a href="https://t.co/EVTbStHkDS" class="uri">https://t.co/EVTbStHkDS</a></td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tracykteal</td>
+<td style="text-align: left;">Very grateful for the AAAS Community Engagement Fellows Program &amp; opportunity for <span class="citation" data-cites="serahrono">@serahrono</span> <span class="citation" data-cites="thecarpentries">@thecarpentries</span> to participate! Already learning from #CEFP2019 &amp; look forward to more ideas &amp; approaches for supporting &amp; developing community &amp; network-centric leaders.</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ChiaBertipaglia</td>
+<td style="text-align: left;">There we go! Off to an intensive training week at <span class="citation" data-cites="aaas">@aaas</span> starting with “What is a #community?” <span class="citation" data-cites="TheCSCCE">@TheCSCCE</span> #CEFP2019 <a href="https://t.co/CMU7n2BOq2" class="uri">https://t.co/CMU7n2BOq2</a></td>
+<td style="text-align: right;">18</td>
+</tr>
 </tbody>
 </table>
 
