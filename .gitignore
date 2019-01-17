@@ -38,3 +38,9 @@ rsconnect/
 # DSstore
 dataviz/.DS_Store
 .DS_Store
+
+# dataviz data
+dataviz/*.csv
+
+# metrics
+metrics/*
