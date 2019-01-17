@@ -1,7 +1,7 @@
 ### Basic summary
 
-There were a total of **129** tweets with the \#CEFP2019 hashtag. These
-tweets were authored by **28** different particpants.
+There were a total of **132** tweets with the \#CEFP2019 hashtag. These
+tweets were authored by **29** different particpants.
 
 ![](rtweets_CEFP2019_figs/topusers-1.png)
 
@@ -39,14 +39,24 @@ tweets were authored by **28** different particpants.
 <td style="text-align: right;">26</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">LouWoodley</td>
+<td style="text-align: left;">Go, CEFP! Group photo of #CEFP2019 fellows, mentors from #cefp2017 and <span class="citation" data-cites="TheCSCCE">@TheCSCCE</span> staff ❤️ <a href="https://t.co/EVTbStHkDS" class="uri">https://t.co/EVTbStHkDS</a></td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">Baker_aquatic</td>
 <td style="text-align: left;">Excited to be in Washington for the kick off meeting on community engagement in science <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019 #training #learning #newfriends <a href="https://t.co/9nsHEcaaqZ" class="uri">https://t.co/9nsHEcaaqZ</a></td>
 <td style="text-align: right;">25</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">biotechchat</td>
 <td style="text-align: left;">We’re here, we’re caffeinated and we’re ready to kick off #CEFP2019! <a href="https://t.co/XJpO9jXrW4" class="uri">https://t.co/XJpO9jXrW4</a></td>
 <td style="text-align: right;">21</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">serahrono</td>
+<td style="text-align: left;">One of the things I have picked up from other #CEFP2019 fellows, and that I absolutely love, is how important it is to involve and continually ascribe progress and learnings to members of the community one is embedded in. More ‘we’, less ‘I’. If only it was spelt ‘commun-WE-ty’.</td>
+<td style="text-align: right;">20</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">raynamharris</td>
@@ -57,21 +67,6 @@ tweets were authored by **28** different particpants.
 <td style="text-align: left;">camisantistevan</td>
 <td style="text-align: left;">Let’s get to work! <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019 <a href="https://t.co/jwoNSzuHAt" class="uri">https://t.co/jwoNSzuHAt</a></td>
 <td style="text-align: right;">19</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">LouWoodley</td>
-<td style="text-align: left;">Go, CEFP! Group photo of #CEFP2019 fellows, mentors from #cefp2017 and <span class="citation" data-cites="TheCSCCE">@TheCSCCE</span> staff ❤️ <a href="https://t.co/EVTbStHkDS" class="uri">https://t.co/EVTbStHkDS</a></td>
-<td style="text-align: right;">18</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">tracykteal</td>
-<td style="text-align: left;">Very grateful for the AAAS Community Engagement Fellows Program &amp; opportunity for <span class="citation" data-cites="serahrono">@serahrono</span> <span class="citation" data-cites="thecarpentries">@thecarpentries</span> to participate! Already learning from #CEFP2019 &amp; look forward to more ideas &amp; approaches for supporting &amp; developing community &amp; network-centric leaders.</td>
-<td style="text-align: right;">18</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">ChiaBertipaglia</td>
-<td style="text-align: left;">There we go! Off to an intensive training week at <span class="citation" data-cites="aaas">@aaas</span> starting with “What is a #community?” <span class="citation" data-cites="TheCSCCE">@TheCSCCE</span> #CEFP2019 <a href="https://t.co/CMU7n2BOq2" class="uri">https://t.co/CMU7n2BOq2</a></td>
-<td style="text-align: right;">18</td>
 </tr>
 </tbody>
 </table>
@@ -98,8 +93,28 @@ tweets were authored by **28** different particpants.
 <td style="text-align: right;">10</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">raynamharris</td>
+<td style="text-align: left;">I’m giving a lightning talk today at #CEFP2019 about networking strategies. Comments/feedback for improving the content and this accompanying infographic are welcome! <a href="https://t.co/PmpufWd6VC" class="uri">https://t.co/PmpufWd6VC</a> #CommunityEngagement #CommonsPilot <a href="https://t.co/vTFOOhJFpf" class="uri">https://t.co/vTFOOhJFpf</a></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TheCSCCE</td>
+<td style="text-align: left;">Meet Ann Meyer! She’s the coordinator for the Canadian Bioinformatics Workshops series (<a href="https://t.co/N2O0wU40bm" class="uri">https://t.co/N2O0wU40bm</a>), the Knowledge and Research Exchange manager at OICR: <a href="https://t.co/wP66u91Juq" class="uri">https://t.co/wP66u91Juq</a> <span class="citation" data-cites="meyer_ann">@meyer_ann</span> #CEFP2019 <a href="https://t.co/gdndhxx7Ed" class="uri">https://t.co/gdndhxx7Ed</a></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LouWoodley</td>
+<td style="text-align: left;">Go, CEFP! Group photo of #CEFP2019 fellows, mentors from #cefp2017 and <span class="citation" data-cites="TheCSCCE">@TheCSCCE</span> staff ❤️ <a href="https://t.co/EVTbStHkDS" class="uri">https://t.co/EVTbStHkDS</a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">ah_bakker</td>
 <td style="text-align: left;">First day of #CEFP2019 is a wrap! I met some fantastic people, learned about different kinds of scientific communities, and was inspired by <span class="citation" data-cites="LouWoodley">@LouWoodley</span> speaking on different stages of community growth. Eager to continue the conversation tomorrow. <a href="https://t.co/aJpHscDVSX" class="uri">https://t.co/aJpHscDVSX</a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EcologyOfShane</td>
+<td style="text-align: left;">Had a really great convo about #impostersyndrome today at #CEFP2019. Reminded me of my own version via #science #FOMO <a href="https://t.co/A3um6yTNUC" class="uri">https://t.co/A3um6yTNUC</a> <span class="citation" data-cites="storycollider">@storycollider</span> #scicomm #storytelling <a href="https://t.co/TUS55a0l33" class="uri">https://t.co/TUS55a0l33</a></td>
 <td style="text-align: right;">6</td>
 </tr>
 <tr class="even">
