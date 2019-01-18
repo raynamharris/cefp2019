@@ -72,7 +72,6 @@ ts_plot(rt, "2 hours") +
 ```
 
 
-### The 5 most favorited tweets
 
 ```{r top5favs, results='asis'}
 top5favs <- rt %>%
@@ -82,7 +81,6 @@ top5favs <- rt %>%
 #kable(top5favs)
 ```
 
-### The 5 most retweeted tweets
 
 ```{r topretweets, results='asis'}
 topretweets <- rt %>%

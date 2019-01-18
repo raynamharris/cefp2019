@@ -1,15 +1,11 @@
 ### Basic summary
 
-There were a total of **3052** tweets with the \#rstudioconf hashtag.
+There were a total of **3053** tweets with the \#rstudioconf hashtag.
 These tweets were authored by **603** different particpants.
 
 ![](rtweets_rstudioconf_figs/topusers-1.png)
 
 ![](rtweets_rstudioconf_figs/tweet_timeline-1.png)
-
-### The 5 most favorited tweets
-
-### The 5 most retweeted tweets
 
 ### Which tweeters had the highest impact?
 
