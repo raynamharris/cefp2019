@@ -26,4 +26,9 @@ Diversity readings
 
 - [diversity backlash](https://code.likeagirl.io/bias-diversity-backlash-manifestos-and-rebuttals-834f7425180e)
 
+Metrics
+
+- 
+- 
+
 
