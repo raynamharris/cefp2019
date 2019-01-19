@@ -35,36 +35,41 @@ tweets were authored by **28** different particpants.
 </tr>
 <tr class="even">
 <td style="text-align: left;">StefanieButland</td>
-<td style="text-align: left;">I’m the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows</td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;">I’m the luckiest community manager! Mentoring this week for 2019 cohort of AAAS Community Engagement Fellows. I learn from <span class="citation" data-cites="rOpenSci">@rOpenSci</span> community, <span class="citation" data-cites="_inundata">@_inundata</span> <span class="citation" data-cites="sckottie">@sckottie</span> <span class="citation" data-cites="ma_salmon">@ma_salmon</span> <span class="citation" data-cites="opencpu">@opencpu</span> <span class="citation" data-cites="RLadiesGlobal">@RLadiesGlobal</span> <span class="citation" data-cites="bffo">@bffo</span> &amp; #CEFP2017 peers. Taking all the goodness back to them #CEFP2019. <a href="https://t.co/ybvfbV8RTX" class="uri">https://t.co/ybvfbV8RTX</a></td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">serahrono</td>
+<td style="text-align: left;">At the end of an impeccable first day at #CEFP2019, and deeply appreciative of, among other things, the time, expertise and experiences that folk from #CEFP2017 have lent us today.</td>
+<td style="text-align: right;">29</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">serahrono</td>
+<td style="text-align: left;">One of the things I have picked up from other #CEFP2019 fellows, and that I absolutely love, is how important it is to involve and continually ascribe progress and learnings to members of the community one is embedded in. More ‘we’, less ‘I’. If only it was spelt ‘commun-WE-ty’.</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">indigoelectrons</td>
+<td style="text-align: left;">There’s a growing body of research showing cultural inclusivity &amp; better representation of #WomenInScience increases <em>success</em> (big term I know), as if we needed more reasons to dismantle the current system rife with inequality. <span class="citation" data-cites="sondy">@sondy</span> #CEFP2019 <a href="https://t.co/U6JJnzHCHy" class="uri">https://t.co/U6JJnzHCHy</a></td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Baker_aquatic</td>
+<td style="text-align: left;">Excited to be in Washington for the kick off meeting on community engagement in science <span class="citation" data-cites="aaas">@aaas</span> #CEFP2019 #training #learning #newfriends <a href="https://t.co/9nsHEcaaqZ" class="uri">https://t.co/9nsHEcaaqZ</a></td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">_jenshook</td>
+<td style="text-align: left;">Had so much fun showing #CEFP2019 around <span class="citation" data-cites="InsideNatGeo">@InsideNatGeo</span> this week! #scicommunity So excited to learn from this crew this year! <a href="https://t.co/wdNhcthsnG" class="uri">https://t.co/wdNhcthsnG</a></td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">biotechchat</td>
+<td style="text-align: left;">We’re here, we’re caffeinated and we’re ready to kick off #CEFP2019! <a href="https://t.co/XJpO9jXrW4" class="uri">https://t.co/XJpO9jXrW4</a></td>
+<td style="text-align: right;">21</td>
 </tr>
 </tbody>
 </table>
-
-I learn from @rOpenSci community, @\_inundata @sckottie @ma\_salmon
-@opencpu @RLadiesGlobal @bffo & \#CEFP2017 peers
-
-Taking all the goodness back to them
-
-\#CEFP2019 <https://t.co/ybvfbV8RTX> 31 serahrono At the end of an
-impeccable first day at \#CEFP2019, and deeply appreciative of, among
-other things, the time, expertise and experiences that folk from
-\#CEFP2017 have lent us today. 29 serahrono One of the things I have
-picked up from other \#CEFP2019 fellows, and that I absolutely love, is
-how important it is to involve and continually ascribe progress and
-learnings to members of the community one is embedded in. More ‘we’,
-less ‘I’. If only it was spelt ‘commun-WE-ty’. 27 indigoelectrons
-There’s a growing body of research showing cultural inclusivity & better
-representation of \#WomenInScience increases *success* (big term I
-know), as if we needed more reasons to dismantle the current system rife
-with inequality. @sondy \#CEFP2019 <https://t.co/U6JJnzHCHy> 26
-Baker\_aquatic Excited to be in Washington for the kick off meeting on
-community engagement in science @aaas \#CEFP2019 \#training \#learning
-\#newfriends <https://t.co/9nsHEcaaqZ> 25 \_jenshook Had so much fun
-showing \#CEFP2019 around @InsideNatGeo this week! \#scicommunity So
-excited to learn from this crew this year! <https://t.co/wdNhcthsnG> 24
-biotechchat We’re here, we’re caffeinated and we’re ready to kick off
-\#CEFP2019! <https://t.co/XJpO9jXrW4> 21
 
 ### The 5 most retweeted tweets
 
