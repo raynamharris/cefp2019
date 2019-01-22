@@ -1,6 +1,6 @@
 # cefp2019
  
-A public repo for my community engagement fellowship documents.
+A public repo for my [community engagement fellowship program (CEFP)](https://www.aaas.org/programs/community-engagement-fellows) documents.
 
 ## Table of Contents
 
@@ -33,6 +33,4 @@ A folder for building [a website](https://raynamharris.github.io/cefp2019/) that
 A place to keep track of Rscripts that I use to analyze data and create reports.
  
 - [rtweets_rstudioconf.md](notes/rtweets_rstudioconf.md)
-- [rtweets_rstudioconf.Rmd](notes/rtweets_rstudioconf.Rmd)
 - [rtweets_CEFP2019.md](notes/rtweets_CEFP2019.md)
-- [rtweets_CEFP2019.Rmd](notes/rtweets_CEFP2019.Rmd)

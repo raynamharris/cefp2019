@@ -1,7 +1,7 @@
 echo "# cefp2019" > README.md
 
 echo " 
-A public repo for my community engagement fellowship documents.
+A public repo for my [community engagement fellowship program (CEFP)](https://www.aaas.org/programs/community-engagement-fellows) documents.
 
 ## Table of Contents
 
@@ -67,7 +67,7 @@ A place to keep track of Rscripts that I use to analyze data and create reports.
  " >> README.md
 
 cd dataviz
-for filename in `ls -r *md`
+for filename in `ls -r *.md`
 do 
 echo "- [$filename](notes/$filename)"  >> ../README.md
 done
