@@ -5,17 +5,12 @@ A public repo for my [community engagement fellowship program (CEFP)](https://ww
 
 ## Table of Contents
 
-### planning
+### work out loud
 
-A place to keep track of my weekly and yearly goals." >> README.md
+Each Tuesday I will post my weekly goals as [an issue tagged `#workoutloud`](https://github.com/raynamharris/cefp2019/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aworkoutloud+).
 
-cd planning
-for filename in `ls -r *`
-do 
-echo "- [$filename](todos/$filename)" >> ../README.md
-done
-cd ..
-
+This is an example of how GitHub can be used as a project management system. 
+" >> README.md
 
 # resources
 
@@ -28,7 +23,7 @@ A place to keep track of notes and resources.
 cd resources
 for filename in `ls -r *`
 do 
-echo "- [$filename](notes/$filename)"  >> ../README.md
+echo "- [$filename](resources/$filename)"  >> ../README.md
 done
 cd ..
 
@@ -44,7 +39,7 @@ A place to keep track of images that I make.
 cd infographics
 for filename in `ls -r *`
 do 
-echo "- [$filename](blogs/$filename)"  >> ../README.md
+echo "- [$filename](infographics/$filename)"  >> ../README.md
 done
 cd ..
 
@@ -69,7 +64,7 @@ A place to keep track of Rscripts that I use to analyze data and create reports.
 cd dataviz
 for filename in `ls -r *.md`
 do 
-echo "- [$filename](notes/$filename)"  >> ../README.md
+echo "- [$filename](dataviz/$filename)"  >> ../README.md
 done
 cd ..
 
