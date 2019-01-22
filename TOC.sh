@@ -7,7 +7,9 @@ A public repo for my [community engagement fellowship program (CEFP)](https://ww
 
 ### work out loud
 
-Each Tuesday I will post my weekly goals as [an issue tagged `#workoutloud`](https://github.com/raynamharris/cefp2019/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aworkoutloud+). This is an example of how GitHub can be used as a project management system. 
+Each Tuesday I will post my weekly goals as [an issue tagged `#workoutloud`](https://github.com/raynamharris/cefp2019/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aworkoutloud+).
+
+This is an example of how GitHub can be used as a project management system. 
 " >> README.md
 
 # resources
