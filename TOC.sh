@@ -25,7 +25,7 @@ echo "
 A place to keep track of notes and resources.
  " >> README.md
 
-cd infographics
+cd resources
 for filename in `ls -r *`
 do 
 echo "- [$filename](notes/$filename)"  >> ../README.md

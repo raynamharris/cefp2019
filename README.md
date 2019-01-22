@@ -13,8 +13,7 @@ A place to keep track of my weekly and yearly goals.
 
 A place to keep track of notes and resources.
  
-- [cefp-networking-02.png](notes/cefp-networking-02.png)
-- [cefp-networking-01.png](notes/cefp-networking-01.png)
+- [2019-01-14-CEFPlinks.md](notes/2019-01-14-CEFPlinks.md)
 
 ### infographics
 
