@@ -7,82 +7,15 @@ These tweets were authored by **692** different particpants.
 
 ![](rtweets_rstudioconf_figs/tweet_timeline-1.png)
 
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">screen_name</th>
-<th style="text-align: left;">text</th>
-<th style="text-align: right;">favorite_count</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">allimoberger</td>
-<td style="text-align: left;">“You shouldn’t feel ashamed about your code - if it solves the problem, it’s perfect just the way it is. But also, it could always be better.” <span class="citation" data-cites="hadleywickham">@hadleywickham</span> #rstudioconf</td>
-<td style="text-align: right;">489</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">AmeliaMN</td>
-<td style="text-align: left;">The slides for my #rstudioconf talk, Working with Categorical Data in R without Losing your Mind, are available at</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://t.co/Ae" class="uri">https://t.co/Ae</a></td>
-<td style="text-align: left;">SQZJ74YP</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">and the paper I</td>
-<td style="text-align: left;">’m plugging is at</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://t.co/kf" class="uri">https://t.co/kf</a></td>
-<td style="text-align: left;">KgPrneQB <a href="https://t.co/RUYabPTGIH" class="uri">https://t.co/RUYabPTGIH</a> 446</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">travisgerke</td>
-<td style="text-align: left;">I took notes in tired/wired format from the <em>incredible</em> #rstudioconf workshop “What they forgot to teach you about R” by <span class="citation" data-cites="JennyBryan">@JennyBryan</span> and <span class="citation" data-cites="jimhester_">@jimhester_</span>. Here are some highlights, in case useful for others.</td>
-<td style="text-align: right;">428</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">robinson_es</td>
-<td style="text-align: left;">Data scientists can fail by:</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">❌not saying no</td>
-<td style="text-align: left;">enough</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">❌not providing</td>
-<td style="text-align: left;">anything more than a cursory analysis</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">❌assuming PM kn</td>
-<td style="text-align: left;">ows enough to ask question in the right way and not collaborating with them</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">❌caring more ab</td>
-<td style="text-align: left;">out using fancy method than solving business problems</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">#rstudioconf</td>
-<td style="text-align: left;">376</td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">_inundata</td>
-<td style="text-align: left;">Hex stickers are so passé. #rstudioconf <a href="https://t.co/Nv5DCLj9ab" class="uri">https://t.co/Nv5DCLj9ab</a></td>
-<td style="text-align: right;">375</td>
-</tr>
-</tbody>
-</table>
+A tibble: 5 x 3
+===============
+
+screen\_name text favorite\_count <chr> <chr> <int> 1 allimoberger “"You
+shouldn’t feel ashamed about your co… 489 2 AmeliaMN”The slides for my
+\#rstudioconf talk, Worki… 446 3 travisgerke “I took notes in
+tired/wired format from th… 428 4 robinson\_es”Data scientists can fail
+by:❌not saying … 376 5 \_inundata Hex stickers are so passé.
+\#rstudioconf htt… 375
 
 A tibble: 5 x 3
 ===============

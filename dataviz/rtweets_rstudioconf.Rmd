@@ -80,8 +80,8 @@ top5favs <- rt %>%
   top_n(5, favorite_count) %>%
   arrange(desc(favorite_count)) %>%
   select(screen_name, text, favorite_count)
-kable(top5favs)
-#top5favs
+#kable(top5favs)
+top5favs
 ```
 
 
