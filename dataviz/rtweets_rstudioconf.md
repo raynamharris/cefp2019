@@ -1,21 +1,11 @@
 ### Basic summary
 
-There were a total of **3643** tweets with the \#rstudioconf hashtag.
+There were a total of **3642** tweets with the \#rstudioconf hashtag.
 These tweets were authored by **692** different particpants.
 
 ![](rtweets_rstudioconf_figs/topusers-1.png)
 
 ![](rtweets_rstudioconf_figs/tweet_timeline-1.png)
-
-A tibble: 5 x 3
-===============
-
-screen\_name text favorite\_count <chr> <chr> <int> 1 allimoberger “"You
-shouldn’t feel ashamed about your co… 489 2 AmeliaMN”The slides for my
-\#rstudioconf talk, Worki… 446 3 travisgerke “I took notes in
-tired/wired format from th… 428 4 robinson\_es”Data scientists can fail
-by:❌not saying … 376 5 \_inundata Hex stickers are so passé.
-\#rstudioconf htt… 375
 
 A tibble: 5 x 3
 ===============
