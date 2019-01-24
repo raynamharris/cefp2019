@@ -1,16 +1,11 @@
-    ## Warning: Rate limit exceeded - 88
-
-    ## Warning: Rate limit exceeded
-
 ### Basic summary
 
-There were a total of **300** tweets with the \#rstudioconf hashtag.
-These tweets were authored by **198** different particpants.
+There were a total of **3638** tweets with the \#rstudioconf hashtag.
+These tweets were authored by **692** different particpants.
 
 ![](rtweets_rstudioconf_figs/topusers-1.png)
 
 ![](rtweets_rstudioconf_figs/tweet_timeline-1.png)
-
 
 ### Which tweeters had the highest impact?
 
