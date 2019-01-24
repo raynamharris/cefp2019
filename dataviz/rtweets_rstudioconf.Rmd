@@ -126,8 +126,7 @@ a <- ggplot(most_rt) +
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
     #title = "Who gets the most retweets?",   
-    subtitle = "Total #rstudioconf retweets",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+    subtitle = "Total #rstudioconf retweets")
 #a
 
 most_rt <- impact %>%
@@ -164,8 +163,7 @@ b2 <- most_rt  %>%
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
     #title = "Who gets the most retweets on average?",   
-    subtitle = "Mean #rstudioconf retweets",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+    subtitle = "Mean #rstudioconf retweets")
  
 #b2
 
@@ -189,8 +187,7 @@ c <- ggplot(most_fav) +
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
     #title = "Who gets the most favorites?",
-    subtitle = "Total #CEFP2019 favorites",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+    subtitle = "Total #CEFP2019 favorites")
 #c
 
 
@@ -211,8 +208,7 @@ d <- ggplot(most_rt) +
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
     #title = "Who gets the most favorites on average?",   
-    subtitle = "Mean #rstudioconf favorites",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+    subtitle = "Mean #rstudioconf favorites")
 
 #d
 
@@ -228,8 +224,7 @@ d2 <- most_rt  %>%
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
     #title = "Who gets the most retweets on average?",   
-    subtitle = "Mean #rstudioconf favorites",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+    subtitle = "Mean #rstudioconf favorites")
  
 #d2
 
