@@ -81,7 +81,7 @@ top5favs <- rt %>%
   arrange(desc(favorite_count)) %>%
   select(screen_name, text, favorite_count)
 #kable(top5favs)
-#top5favs
+print(top5favs)
 ```
 
 
@@ -109,7 +109,7 @@ impact <- rt %>%
     filter(n_tweets >=  3) %>%
     arrange(-n_tweets)
 #kable(impact)
-head(impact)
+#head(impact)
 ```
 
 ```{r retweet}

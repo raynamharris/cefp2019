@@ -1,7 +1,11 @@
+    ## Warning: Rate limit exceeded - 88
+
+    ## Warning: Rate limit exceeded
+
 ### Basic summary
 
-There were a total of **3642** tweets with the \#rstudioconf hashtag.
-These tweets were authored by **692** different particpants.
+There were a total of **300** tweets with the \#rstudioconf hashtag.
+These tweets were authored by **198** different particpants.
 
 ![](rtweets_rstudioconf_figs/topusers-1.png)
 
@@ -10,24 +14,24 @@ These tweets were authored by **692** different particpants.
 A tibble: 5 x 3
 ===============
 
-screen\_name text retweet\_count <chr> <chr> <int> 1 AmeliaMN “The
-slides for my \#rstudioconf talk, Workin… 157 2 travisgerke”I took notes
-in tired/wired format from the… 140 3 allimoberger ""You shouldn’t feel
-ashamed about your cod… 130 4 \_inundata Slides from my \#rstudioconf
-talk on How To M… 105 5 robinson\_es "Data scientists can fail by:❌not
-saying n… 95
+screen\_name text favorite\_count <chr> <chr> <int> 1 skyetetra “Here is
+my write-up on \#RStudioConf! I s… 344 2 NicholasStray… Thing I learned
+at \#Rstudioconf that stic… 238 3 juliasilge”NEW POST: Feeling the
+\#rstudioconf ❤️… 199 4 JoannaMelon My slides and demo of `learnr` is
+here! P… 181 5 CMastication "Just the CTO of a global software compan…
+173
+
+A tibble: 5 x 3
+===============
+
+screen\_name text retweet\_count <chr> <chr> <int> 1 skyetetra “Here is
+my write-up on \#RStudioConf! I saw … 76 2 cdhowe For everyone who is
+interested in RStudio’s … 61 3 juliasilge”NEW POST: Feeling the
+\#rstudioconf ❤️… 46 4 zevross "Inspired by @drob, a blog post with 15
+new … 41 5 CMastication You want \#rstudioconf pictures? I’ve got em!…
+37
 
 ### Which tweeters had the highest impact?
-
-    ## # A tibble: 6 x 8
-    ##   screen_name   n_tweets n_fav  n_rt mean_fav mean_rt se_fav  se_rt
-    ##   <chr>            <int> <int> <int>    <dbl>   <dbl>  <dbl>  <dbl>
-    ## 1 StatStas           125   223    46     1.78    0.37  0.414 0.0791
-    ## 2 cbirunda           106   852   132     8.04    1.25  1.98  0.504 
-    ## 3 sharon000          104   711   243     6.84    2.34  0.757 0.254 
-    ## 4 malco_barrett       77   396    58     5.14    0.75  0.704 0.150 
-    ## 5 tladeras            60   199    28     3.32    0.47  1.11  0.244 
-    ## 6 AmeliaMN            57  1536   395    27.0     6.93  9.00  3.05
 
 ![](rtweets_rstudioconf_figs/retweet-1.png)
 
