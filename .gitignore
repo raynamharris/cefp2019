@@ -44,3 +44,7 @@ dataviz/*.csv
 
 # metrics
 metrics/*
+
+# resources
+resources/*.acsm
+resources/*.pdf
