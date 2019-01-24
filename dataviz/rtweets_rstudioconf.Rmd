@@ -166,7 +166,9 @@ b2 <- mean_rt  %>%
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
     #title = "Who gets the most retweets on average?",   
-    subtitle = "Mean #rstudioconf retweets")
+    subtitle = "Mean #rstudioconf retweets") +
+    geom_text(aes(label = n_tweets), hjust = -2)
+
  
 #b2
 
@@ -190,7 +192,8 @@ c <- ggplot(most_fav) +
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
     #title = "Who gets the most favorites?",
-    subtitle = "Most #CEFP2019 favorites")
+    subtitle = "Most #CEFP2019 favorites")   
+
 #c
 
 
@@ -227,7 +230,8 @@ d2 <- mean_rt  %>%
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
     #title = "Who gets the most retweets on average?",   
-    subtitle = "Mean #rstudioconf favorites")
+    subtitle = "Mean #rstudioconf favorites") +
+  geom_text(aes(label = n_tweets), hjust = -2)
  
 #d2
 
