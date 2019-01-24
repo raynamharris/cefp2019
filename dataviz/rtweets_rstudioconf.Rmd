@@ -81,7 +81,7 @@ top5favs <- rt %>%
   arrange(desc(favorite_count)) %>%
   select(screen_name, text, favorite_count)
 #kable(top5favs)
-print(top5favs)
+#print(top5favs)
 ```
 
 
@@ -91,7 +91,7 @@ topretweets <- rt %>%
   arrange(desc(retweet_count)) %>%
   select(screen_name, text, retweet_count)
 #kable(topretweets)
-print(topretweets)
+#print(topretweets)
 ```
 
 ### Which tweeters had the highest impact?
