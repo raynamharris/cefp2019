@@ -11,6 +11,8 @@ library(dplyr) # for filter and select
 library(tidyr) # for gather function
 library(knitr) # for pretty tables
 library(ggplot2) # for plotting
+library("plotrix") # for std error
+library("cowplot") # for doubble figures
 
 # set default code output to False
 knitr::opts_chunk$set(echo = F)
@@ -65,7 +67,7 @@ ts_plot(rt, "2 hours") +
   ggplot2::labs(
     x = NULL, y = NULL,
     title = "Frequency of #rstudioconf tweets",
-    subtitle = "Total weet counts aggregated using two-hour intervals",
+    subtitle = "Total tweet counts aggregated using two-hour intervals",
     caption = "\nSource: Data collected from Twitter's REST API via rtweet"
   )
 
@@ -99,13 +101,15 @@ impact <- rt %>%
               n_fav = sum(favorite_count),
               n_rt =  sum(retweet_count),
               mean_fav = round(mean(favorite_count), digits = 2),
-              mean_rt = round(mean(retweet_count), digits = 2)) %>%
+              mean_rt = round(mean(retweet_count), digits = 2),
+              se_fav = std.error(favorite_count),
+              se_rt = std.error(retweet_count)) %>%
     filter(n_tweets >=  3) %>%
     arrange(-n_tweets)
 #kable(impact)
 ```
 
-```{r totalretweet}
+```{r retweet}
 most_rt <- impact %>%
     top_n(20, n_rt)
 most_rt$screen_name <- reorder(most_rt$screen_name,
@@ -121,13 +125,11 @@ a <- ggplot(most_rt) +
     theme(axis.text = element_text(size = 8),
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
-    title = "Who gets the most retweets?",   
+    #title = "Who gets the most retweets?",   
     subtitle = "Total #rstudioconf retweets",
     caption = "\nSource: Data collected from Twitter's REST API via rtweet")
-a
-```
+#a
 
-```{r meanretweet}
 most_rt <- impact %>%
     top_n(20, mean_rt)
 most_rt$screen_name <- reorder(most_rt$screen_name,
@@ -140,16 +142,37 @@ b <- ggplot(most_rt) +
     geom_text(aes(label = mean_rt, y = mean_rt, x = screen_name),  
             hjust=1, size = 2.5, color = "#E1E9E8") +
     theme_minimal() +
-    theme(axis.text = element_text(size = 12),
-          legend.text = element_text(size = 12)) +
+    theme(axis.text = element_text(size = 8),
+          legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
-    title = "Who gets the most retweets on average?",   
+    #title = "Who gets the most retweets on average?",   
     subtitle = "Mean number of #rstudioconf retweets",
     caption = "\nSource: Data collected from Twitter's REST API via rtweet")
-b
+#b
+
+
+b2 <- most_rt  %>% 
+  ggplot(aes(x=, reorder(screen_name, mean_rt), y = mean_rt, 
+             stat = "identity")) + 
+    geom_errorbar(aes(ymin=mean_rt-se_rt, ymax=mean_rt+se_rt), width=.1) +
+    geom_point(size = 2) +
+    coord_flip() + 
+    geom_text(aes(label = mean_rt, y = mean_rt, x = screen_name),  
+            hjust=1, size = 2.5, color = "#E1E9E8") +
+    theme_minimal() +
+    theme(axis.text = element_text(size = 8),
+          legend.text = element_text(size = 8)) +
+  labs(x = "User", y = NULL,
+    #title = "Who gets the most retweets on average?",   
+    subtitle = "Mean #rstudioconf retweets",
+    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+ 
+#b2
+
+plot_grid(a, b2)
 ```
 
-```{r mostfav}
+```{r favorites}
 most_fav <- impact %>%
     top_n(20, n_fav)
 most_fav$screen_name <- reorder(most_fav$screen_name,
@@ -165,14 +188,12 @@ c <- ggplot(most_fav) +
     theme(axis.text = element_text(size = 8),
           legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
-    subtitle = "Who gets the most favorites?",
-    title = "Total #CEFP2019 favorites",
+    #title = "Who gets the most favorites?",
+    subtitle = "Total #CEFP2019 favorites",
     caption = "\nSource: Data collected from Twitter's REST API via rtweet")
-c
+#c
 
-```
 
-```{r meanfav}
 most_rt <- impact %>%
     top_n(20, mean_fav)
 most_rt$screen_name <- reorder(most_rt$screen_name,
@@ -186,15 +207,35 @@ d <- ggplot(most_rt) +
     geom_text(aes(label = mean_fav, y = mean_fav, x = screen_name),  
             hjust=1, size = 2.5, color = "#E1E9E8") +
     theme_minimal() +
-    theme(axis.text = element_text(size = 12),
-          legend.text = element_text(size = 12)) +
+    theme(axis.text = element_text(size = 8),
+          legend.text = element_text(size = 8)) +
   labs(x = "User", y = NULL,
-    title = "Who gets the most favorites on average?",   
-    subtitle = "Mean number of #rstudioconf favorites",
+    #title = "Who gets the most favorites on average?",   
+    subtitle = "Mean #rstudioconf favorites",
     caption = "\nSource: Data collected from Twitter's REST API via rtweet")
 
-d
+#d
+
+
+d2 <- most_rt  %>% 
+  ggplot(aes( x = reorder(screen_name, mean_fav), y = mean_fav, 
+             stat = "identity")) + 
+    geom_errorbar(aes(ymin=mean_fav-se_fav, ymax=mean_fav+se_fav), width=.1) +
+    geom_point(size = 2) +
+    coord_flip() + 
+    theme_minimal() +
+    theme(axis.text = element_text(size = 8),
+          legend.text = element_text(size = 8)) +
+  labs(x = "User", y = NULL,
+    #title = "Who gets the most retweets on average?",   
+    subtitle = "Mean #rstudioconf favorites",
+    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+ 
+#d2
+
+plot_grid(c, d2)
 ```
+
 
 
 ### Acknowledgments
