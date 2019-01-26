@@ -15,6 +15,16 @@ This is an example of how GitHub can be used as a project management system.
 
 A place to keep track of notes and resources.
  
+- [Kraut2011.acsm](resources/Kraut2011.acsm)
+- [Kraut-ch1.pdf](resources/Kraut-ch1.pdf)
+- [CEFP_2019_community](resources/CEFP_2019_community)
+- [coins.pdf](resources/coins.pdf)
+- [CEFP2019](resources/CEFP2019)
+- [lightning](resources/lightning)
+- [talk](resources/talk)
+- [guidelines](resources/guidelines)
+- [and](resources/and)
+- [tips.pdf](resources/tips.pdf)
 - [2019-01-14-CEFPlinks.md](resources/2019-01-14-CEFPlinks.md)
 
 ### infographics
@@ -35,3 +45,4 @@ A place to keep track of Rscripts that I use to analyze data and create reports.
  
 - [rtweets_rstudioconf.md](dataviz/rtweets_rstudioconf.md)
 - [rtweets_CEFP2019.md](dataviz/rtweets_CEFP2019.md)
+- [isoband.md](dataviz/isoband.md)
