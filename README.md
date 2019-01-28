@@ -35,4 +35,3 @@ A place to keep track of Rscripts that I use to analyze data and create reports.
  
 - [rtweets_rstudioconf.md](dataviz/rtweets_rstudioconf.md)
 - [rtweets_CEFP2019.md](dataviz/rtweets_CEFP2019.md)
-- [isoband.md](dataviz/isoband.md)
