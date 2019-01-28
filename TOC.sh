@@ -21,7 +21,7 @@ A place to keep track of notes and resources.
  " >> README.md
 
 cd resources
-for filename in `ls -r *`
+for filename in `ls -r *.md`
 do 
 echo "- [$filename](resources/$filename)"  >> ../README.md
 done
