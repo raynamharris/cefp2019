@@ -1,31 +1,35 @@
+# This is a bash script that I use to build the README with a hyperlinked Table of Contents (TOC)
+
 echo "# cefp2019" > README.md
 
 echo " 
-A public repo for my [community engagement fellowship program (CEFP)](https://www.aaas.org/programs/community-engagement-fellows) documents.
+This is a public repo for notes and artifacts related to [community engagement fellowship program (CEFP)](https://www.aaas.org/programs/community-engagement-fellows) documents.
 
-## Table of Contents
+## Table of Contents" >> README.md
 
-### work out loud
-
-Each Tuesday I will post my weekly goals as [an issue tagged #work-out-loud](https://github.com/raynamharris/cefp2019/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Awork-out-loud+).
-
-This is an example of how GitHub can be used as a project management system. 
-" >> README.md
-
-# resources
+# dataviz
 
 echo "
-### resources
+### dataviz
 
-A place to keep track of notes and resources.
+A place to keep track of Rscripts that I use to analyze data and create reports.
  " >> README.md
 
-cd resources
+cd dataviz
 for filename in `ls -r *.md`
 do 
-echo "- [$filename](resources/$filename)"  >> ../README.md
+echo "- [$filename](dataviz/$filename)"  >> ../README.md
 done
 cd ..
+
+
+# docs
+
+echo "
+### docs
+
+A folder for building [a website](https://raynamharris.github.io/cefp2019/) that will serve as my community playbook.  
+ " >> README.md
 
 
 # infographics
@@ -43,32 +47,30 @@ echo "- [$filename](infographics/$filename)"  >> ../README.md
 done
 cd ..
 
-
-# docs
-
-echo "
-### docs
-
-A folder for building [a website](https://raynamharris.github.io/cefp2019/) that will serve as my community playbook.  
- " >> README.md
- 
- 
-# dataviz
+# resources
 
 echo "
-### dataviz
+### resources
 
-A place to keep track of Rscripts that I use to analyze data and create reports.
+A place to keep track of notes and resources.
  " >> README.md
 
-cd dataviz
+cd resources
 for filename in `ls -r *.md`
 do 
-echo "- [$filename](dataviz/$filename)"  >> ../README.md
+echo "- [$filename](resources/$filename)"  >> ../README.md
 done
 cd ..
 
+# work out loud
 
+echo "
+### work out loud
+
+Each Tuesday I will post my weekly goals as [an issue tagged #work-out-loud](https://github.com/raynamharris/cefp2019/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Awork-out-loud+).
+
+This is an example of how GitHub can be used as a project management system. 
+ " >> README.md
 
 
 
