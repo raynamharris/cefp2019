@@ -66,10 +66,7 @@ cd ..
 
 echo "
 ### work out loud
-
-Each Tuesday I will post my weekly goals as [an issue tagged #work-out-loud](https://github.com/raynamharris/cefp2019/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Awork-out-loud+).
-
-This is an example of how GitHub can be used as a project management system. 
+As part of my fellowship, each week everyone in my cohort shares their weekly todo lists on slack so that we can keep in touch and encourage one another. As a way to track my own progress, each Tuesday I will post my weekly goals as an issue tagged [#work-out-loud](https://github.com/raynamharris/cefp2019/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Awork-out-loud+). This is an example of how GitHub can be used as a project management system for tracking tasks. 
  " >> README.md
 
 
