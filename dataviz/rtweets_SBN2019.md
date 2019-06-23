@@ -49,6 +49,30 @@ screen\_name <chr>
     ## 5 jeremyspool        9    74     5     8.22   0.56    2.78 0.377
     ## 6 tollkuhn           9    95    20    10.6    2.22    2.18 0.401
 
+### Which tweeters had the most retweets?
+
+    ## # A tibble: 6 x 8
+    ##   screen_name     n_tweets n_fav  n_rt mean_fav mean_rt se_fav se_rt
+    ##   <fct>              <int> <int> <int>    <dbl>   <dbl>  <dbl> <dbl>
+    ## 1 SBNTweets             31   381    51     12.3    1.65   3.69 0.611
+    ## 2 trainorlab            19   216    39     11.4    2.05   1.90 0.498
+    ## 3 BeccaCalisi           12   170    32     14.2    2.67   2.85 1.16 
+    ## 4 tollkuhn               9    95    20     10.6    2.22   2.18 0.401
+    ## 5 KeerthiKrishna3        8   101    16     12.6    2      3.91 0.732
+    ## 6 LayoDana               7    63    14      9      2      3.22 0.873
+
+### Which tweeters had the most favorites?
+
+    ## # A tibble: 6 x 8
+    ##   screen_name n_tweets n_fav  n_rt mean_fav mean_rt se_fav se_rt
+    ##   <fct>          <int> <int> <int>    <dbl>   <dbl>  <dbl> <dbl>
+    ## 1 SBNTweets         31   381    51    12.3    1.65    3.69 0.611
+    ## 2 trainorlab        19   216    39    11.4    2.05    1.90 0.498
+    ## 3 BalesLab          12   118     7     9.83   0.580   2.42 0.260
+    ## 4 BeccaCalisi       12   170    32    14.2    2.67    2.85 1.16 
+    ## 5 tollkuhn           9    95    20    10.6    2.22    2.18 0.401
+    ## 6 veenemalab         9   115     3    12.8    0.33    2.63 0.236
+
 ![](rtweets_SBN2019_figs/favorites-1.png)
 
 ### Acknowledgments

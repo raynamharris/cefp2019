@@ -134,6 +134,8 @@ head(impact)
 #head(impact)
 ```
 
+### Which tweeters had the most retweets?
+
 ```{r retweet}
 
 mean_rt <- impact %>%
@@ -141,6 +143,7 @@ mean_rt <- impact %>%
 mean_rt$screen_name <- reorder(mean_rt$screen_name,
                               mean_rt$mean_rt,
                               sort)
+head(mean_rt)
 
 b2 <- mean_rt  %>% 
   ggplot(aes(x= screen_name, y = mean_rt, 
@@ -157,6 +160,8 @@ b2 <- mean_rt  %>%
 
 ```
 
+### Which tweeters had the most favorites?
+
 ```{r favorites}
 most_fav <- impact %>%
     top_n(10, n_fav)
@@ -164,7 +169,7 @@ most_fav$screen_name <- reorder(most_fav$screen_name,
                               most_fav$mean_fav,
                               sort)
 
-
+head(most_fav)
 
 d2 <- most_fav  %>% 
   ggplot(aes( x = screen_name, y = mean_fav, 
