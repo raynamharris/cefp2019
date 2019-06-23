@@ -1,21 +1,24 @@
 ### Basic summary
 
-There were a total of **324** tweets with the SBN hashtag. These tweets
+There were a total of **325** tweets with the SBN hashtag. These tweets
 were authored by **111** different particpants.
 
-    ## # A tibble: 6 x 4
-    ##   screen_name  total_tweets  div6 image                                    
-    ##   <chr>               <int> <dbl> <chr>                                    
-    ## 1 CornilLab               6  1    https://upload.wikimedia.org/wikipedia/c…
-    ## 2 raynamharris            6  1    https://upload.wikimedia.org/wikipedia/c…
-    ## 3 schulz_lab              6  1    https://upload.wikimedia.org/wikipedia/c…
-    ## 4 AubreyMKelly            7  1.17 https://upload.wikimedia.org/wikipedia/c…
-    ## 5 LayoDana                7  1.17 https://upload.wikimedia.org/wikipedia/c…
-    ## 6 rosvall_lab             7  1.17 https://upload.wikimedia.org/wikipedia/c…
+    ## # A tibble: 6 x 3
+    ##   screen_name    total_tweets image                                        
+    ##   <chr>                 <int> <chr>                                        
+    ## 1 KeerthiKrishn…            8 https://library.kissclipart.com/20180830/jw/…
+    ## 2 thegreatratsby            8 https://library.kissclipart.com/20180830/jw/…
+    ## 3 jeremyspool               9 https://library.kissclipart.com/20180830/jw/…
+    ## 4 tollkuhn                  9 https://library.kissclipart.com/20180830/jw/…
+    ## 5 veenemalab                9 https://library.kissclipart.com/20180830/jw/…
+    ## 6 BalesLab                 12 https://library.kissclipart.com/20180830/jw/…
 
 ![](rtweets_SBN2019_figs/topusers-1.png)
 
 ![](rtweets_SBN2019_figs/tweet_timeline-1.png)
+
+top 6 favs
+==========
 
 A tibble: 5 x 3
 ===============
@@ -26,6 +29,9 @@ Interested in bizarre animals that defy expe… 71 3 AubreyMKelly Looks
 like I’ll be presenting the world’s ti… 67 4 raynamharris "I’m
 presenting a poster today at @SBNTweet… 62 5 SBNTweets Welcome to
 @amandakrentzel and @wmkenkel, ou… 53
+
+top 6 retweets
+==============
 
 A tibble: 6 x 3
 ===============
@@ -43,14 +49,12 @@ amazing… 8 6 AubreyMKelly Interested in bizarre animals that defy expec…
     ## # A tibble: 6 x 8
     ##   screen_name n_tweets n_fav  n_rt mean_fav mean_rt se_fav se_rt
     ##   <chr>          <int> <int> <int>    <dbl>   <dbl>  <dbl> <dbl>
-    ## 1 SBNTweets         31   378    51    12.2    1.65    3.69 0.611
-    ## 2 trainorlab        19   214    39    11.3    2.05    1.90 0.498
-    ## 3 BalesLab          12   116     7     9.67   0.580   2.39 0.260
-    ## 4 BeccaCalisi       12   167    32    13.9    2.67    2.84 1.16 
+    ## 1 SBNTweets         31   381    51    12.3    1.65    3.69 0.611
+    ## 2 trainorlab        19   216    39    11.4    2.05    1.90 0.498
+    ## 3 BalesLab          12   118     7     9.83   0.580   2.42 0.260
+    ## 4 BeccaCalisi       12   170    32    14.2    2.67    2.85 1.16 
     ## 5 jeremyspool        9    74     5     8.22   0.56    2.78 0.377
-    ## 6 tollkuhn           9    93    19    10.3    2.11    2.25 0.351
-
-![](rtweets_SBN2019_figs/retweet-1.png)
+    ## 6 tollkuhn           9    95    20    10.6    2.22    2.18 0.401
 
 ![](rtweets_SBN2019_figs/favorites-1.png)
 

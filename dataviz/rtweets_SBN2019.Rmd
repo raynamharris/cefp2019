@@ -1,7 +1,7 @@
 ---
 title: "A summary of the tweets generated at SBN 2019"
 author: "Rayna M Harris"
-output: html_document
+output: md_document
 ---
 
 ```{r setup, echo=FALSE, warning=F, message=F}
@@ -44,66 +44,48 @@ There were a total of **`r nrow(rt)`** tweets with the SBN hashtag. These tweets
 top_users <- rt %>%
     group_by(screen_name) %>%
     summarize(total_tweets = n()) %>%
-  filter(total_tweets > 5) %>%
-  mutate(div6 = total_tweets / 6) %>%
-  arrange(div6)
+  filter(total_tweets > 7) %>%
+  arrange(total_tweets) 
 
 
 top_users$image <- c(
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg/220px-Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg",
-"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg/220px-Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg",
-"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg/220px-Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg",
- "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg/220px-Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg",
-"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg/220px-Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg",
-"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg/220px-Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg",
- "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg/220px-Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg",
-"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg/220px-Taeniopygia_guttata_-_Bushell%27s_Lagoon.jpg",
-"https://sites.google.com/site/ingridcaboucaud/_/rsrc/1417024312307/zebra-finch/DSCN0218.png?height=274&width=320",
- "https://sites.google.com/site/ingridcaboucaud/_/rsrc/1417024312307/zebra-finch/DSCN0218.png?height=274&width=320",
-"https://sites.google.com/site/ingridcaboucaud/_/rsrc/1417024312307/zebra-finch/DSCN0218.png?height=274&width=320",
-"https://sites.google.com/site/ingridcaboucaud/_/rsrc/1417024312307/zebra-finch/DSCN0218.png?height=274&width=320",
- "https://sites.google.com/site/ingridcaboucaud/_/rsrc/1417024312307/zebra-finch/DSCN0218.png?height=274&width=320",
-"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4XwyZazHHPn2MrW2ZzrSs7p5hfJyHbwGdA-9o_SA0nPpb59d9",
- "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4XwyZazHHPn2MrW2ZzrSs7p5hfJyHbwGdA-9o_SA0nPpb59d9"
+  "https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
+"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
+"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
+ "https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
+"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
+"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
+ "https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
+"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
+"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png"
 )
 
 
 head(top_users)
 
-ggplot(top_users, aes(reorder(screen_name, total_tweets), total_tweets, image = image)) +
-  geom_textured_col(img_width = unit(0.1, "null")) +
-  geom_text(aes(label = total_tweets, y = total_tweets, x = screen_name),  
-            hjust= 0.1, size = 2.5) +
+
+a <- ggplot(top_users, aes(reorder(screen_name, total_tweets), total_tweets, image = image)) +
+  geom_isotype_col(
+    img_width = grid::unit(1, "native"), img_height = NULL,
+    ncol = NA, nrow = 1, hjust = 0, vjust = 0.5, fill = "#80808040"
+  ) +
   coord_flip() +
   #scale_fill_manual(values = wes_palette("Zissou1")[c(1, 3)]) +
-  theme_bw() +
-  theme(axis.text = element_text(size = 8),
-  legend.text = element_text(size = 8)) + 
-  labs(x = "User", y = NULL,
-    title = "Who live tweeting #SBN2019 OR #SBN19 OR @SBNtTweets?",
-    subtitle = "Total number of tweets at SBN 2019",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet using ")
+  theme_light() +
+  #theme(axis.text = element_text(size = 8),
+  #legend.text = element_text(size = 8)) + 
+  labs(x = NULL, y = NULL,
+       title = "#SBN2019 #SBN19 @SBNTweets",
+    subtitle  = "Top 9 live tweeters",
+    caption = "\nSource: Data collected from Twitter's REST API via rtweet")
 
-ggplot(top_users, aes(reorder(screen_name, total_tweets), div6, image = image)) +
-  geom_textured_col(img_width = unit(0.1, "null")) +
-  geom_text(aes(label = total_tweets, y = total_tweets, x = screen_name),  
-            hjust= 0.1, size = 2.5) +
-  coord_flip() +
-  #scale_fill_manual(values = wes_palette("Zissou1")[c(1, 3)]) +
-  theme_bw() +
-  theme(axis.text = element_text(size = 8),
-  legend.text = element_text(size = 8)) + 
-  labs(x = "User", y = NULL,
-    title = "Who live tweeting #SBN2019 OR #SBN19 OR @SBNtTweets?",
-    subtitle = "Total number of tweets at SBN 2019",
-    caption = "\nSource: Data collected from Twitter's REST API via rtweet using ")
-
+a
 ```
 
 ```{r tweet_timeline}
 # tweet timeline
 ts_plot(rt, "2 hours") +
-  ggplot2::theme_minimal() +
+  ggplot2::theme_bw() +
   ggplot2::theme(plot.title = ggplot2::element_text(face = "bold")) +
   ggplot2::labs(
     x = NULL, y = NULL,
@@ -114,7 +96,7 @@ ts_plot(rt, "2 hours") +
 
 ```
 
-
+# top 6 favs
 
 ```{r top5favs, results='asis'}
 top5favs <- rt %>%
@@ -124,6 +106,7 @@ top5favs <- rt %>%
 head(top5favs)
 ```
 
+# top 6 retweets
 
 ```{r topretweets, results='asis'}
 topretweets <- rt %>%
@@ -154,12 +137,10 @@ head(impact)
 ```{r retweet}
 
 mean_rt <- impact %>%
-    top_n(20, mean_rt)
+    top_n(10, mean_rt)
 mean_rt$screen_name <- reorder(mean_rt$screen_name,
                               mean_rt$mean_rt,
                               sort)
-
-
 
 b2 <- mean_rt  %>% 
   ggplot(aes(x= screen_name, y = mean_rt, 
@@ -169,49 +150,42 @@ b2 <- mean_rt  %>%
     coord_flip() + 
     geom_text(aes(label = mean_rt, y = mean_rt, x = screen_name),  
             hjust=1, size = 2.5, color = "#E1E9E8") +
-    theme_minimal() +
-    theme(axis.text = element_text(size = 8),
-          legend.text = element_text(size = 8)) +
-  labs(x = NULL,
-    subtitle = "Mean and total retweets at SBN",   
-    y = "Mean retweets") +
-    geom_text(aes(label = n_tweets), hjust = -2)
+    theme_light() +
+
+  labs(x = NULL, y = NULL,
+    subtitle = "Highest mean RTs ") 
 
 ```
 
 ```{r favorites}
 most_fav <- impact %>%
-    top_n(20, n_fav)
+    top_n(10, n_fav)
 most_fav$screen_name <- reorder(most_fav$screen_name,
                               most_fav$mean_fav,
                               sort)
 
 
 
-mean_rt <- impact %>%
-    top_n(20, mean_rt)
-mean_rt$screen_name <- reorder(mean_rt$screen_name,
-                              mean_rt$mean_fav,
-                              sort)
-
-
-
-d2 <- mean_rt  %>% 
+d2 <- most_fav  %>% 
   ggplot(aes( x = screen_name, y = mean_fav, 
              stat = "identity")) + 
     geom_errorbar(aes(ymin=mean_fav-se_fav, ymax=mean_fav+se_fav), width=.1) +
     geom_point(size = 2) +
     coord_flip() + 
-    theme_minimal() +
-    theme(axis.text = element_text(size = 8),
-          legend.text = element_text(size = 8)) +
-  labs(x = NULL, y = "Mean favorites",
-    subtitle = "Mean and total favorites at SBN") +
-  geom_text(aes(label = n_tweets), hjust = -2)
- 
-#d2
+    theme_light() +
+    #theme(axis.text = element_text(size = 8),
+    #      legend.text = element_text(size = 8)) +
+  labs(x = NULL, y = NULL,
+    subtitle  = "Most favorited tweeters", 
+    title = " ") 
 
-plot_grid(b2, d2)
+
+combo <- plot_grid(a, d2)
+combo
+
+
+
+
 ```
 
 
