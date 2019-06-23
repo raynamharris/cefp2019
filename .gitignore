@@ -48,3 +48,4 @@ metrics/*
 # resources
 resources/*.acsm
 resources/*.pdf
+.Rproj.user
