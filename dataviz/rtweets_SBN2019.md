@@ -1,3 +1,21 @@
+    ## load packages
+    #install.packages("plotrix")
+    library(rtweet) # for fetching twitter data
+    library(dplyr) # for filter and select
+    library(tidyr) # for gather function
+    library(knitr) # for pretty tables
+    library(ggplot2) # for plotting
+    library("plotrix") # for std error
+    library("cowplot") # for doubble figures
+    library("ggtextures") 
+
+
+    # set default code output to False
+    knitr::opts_chunk$set(echo = F)
+
+    # set figure directory
+    knitr::opts_chunk$set(fig.path = 'rtweets_SBN2019_figs/')
+
 ### Basic summary
 
 There were a total of **325** tweets with the SBN hashtag. These tweets
@@ -50,6 +68,8 @@ screen\_name <chr>
     ## 4 tollkuhn               9    95    20     10.6    2.22   2.18 0.401
     ## 5 KeerthiKrishna3        8   101    16     12.6    2      3.91 0.732
     ## 6 LayoDana               7    63    14      9      2      3.22 0.873
+
+![](rtweets_SBN2019_figs/retweet-1.png)
 
 ### Which tweeters had the most favorites?
 

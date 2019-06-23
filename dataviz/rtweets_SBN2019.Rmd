@@ -4,7 +4,7 @@ author: "Rayna M Harris"
 output: md_document
 ---
 
-```{r setup, echo=FALSE, warning=F, message=F}
+```{r setup, echo=TRUE, warning=F, message=F}
 ## load packages
 #install.packages("plotrix")
 library(rtweet) # for fetching twitter data
@@ -154,7 +154,7 @@ b2 <- mean_rt  %>%
 
   labs(x = NULL, y = NULL,
     subtitle = "Highest mean RTs ") 
-
+b2
 ```
 
 ### Which tweeters had the most favorites?
@@ -180,14 +180,7 @@ d2 <- most_fav  %>%
   labs(x = NULL, y = NULL,
     subtitle  = "Top 10 favorited tweeters", 
     title = " ") 
-
-
-combo <- plot_grid(a, d2)
-combo
-
-
-
-
+d2
 ```
 
 
