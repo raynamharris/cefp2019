@@ -45,35 +45,25 @@ top_users <- rt %>%
     group_by(screen_name) %>%
     summarize(total_tweets = n()) %>%
   filter(total_tweets > 7) %>%
-  arrange(total_tweets) 
+  arrange(total_tweets)  %>% 
+  mutate(image = "https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png")  %>% 
+  mutate(partials = total_tweets / 2)
 
 
-top_users$image <- c(
-  "https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
-"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
-"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
- "https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
-"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
-"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
- "https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
-"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
-"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png"
-)
 
-
-a <- ggplot(top_users, aes(reorder(screen_name, total_tweets), total_tweets, image = image)) +
+a <- ggplot(top_users, aes(reorder(screen_name, total_tweets), partials, image = image)) +
   geom_isotype_col(
     img_width = grid::unit(1, "native"), img_height = NULL,
     ncol = NA, nrow = 1, hjust = 0, vjust = 0.5, fill = "#80808040"
   ) +
+  scale_y_continuous(breaks = c(5, 10, 15),
+                     label = c("10", "20", "30")) +
   coord_flip() +
-  #scale_fill_manual(values = wes_palette("Zissou1")[c(1, 3)]) +
   theme_light() +
   #theme(axis.text = element_text(size = 8),
   #legend.text = element_text(size = 8)) + 
-  labs(x = NULL, y = NULL,
-       title = "#SBN2019 #SBN19 @SBNTweets",
-    subtitle  = "Top 9 live tweeters",
+  labs(x = NULL, y = "Total number of tweets",
+    subtitle  = "Top live tweeters at #SBN2019 #SBN19",
     caption = "\nSource: Data collected from Twitter's REST API via rtweet")
 
 a
@@ -178,10 +168,16 @@ d2 <- most_fav  %>%
     #theme(axis.text = element_text(size = 8),
     #      legend.text = element_text(size = 8)) +
   labs(x = NULL, y = NULL,
-    subtitle  = "Top 10 favorited tweeters", 
+    subtitle  = "Top favorited tweeters", 
     title = " ") 
 d2
 ```
+
+```{r combo}
+
+plot_grid(a,d2, rel_widths = c(0.65,0.35))
+```
+
 
 
 
