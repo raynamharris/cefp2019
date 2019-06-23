@@ -49,19 +49,16 @@ top_users <- rt %>%
 
 
 top_users$image <- c(
-  "https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
-"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
-"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
- "https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
-"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
-"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
- "https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
-"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png",
-"https://library.kissclipart.com/20180830/jw/kissclipart-clip-art-finch-clipart-finches-zebra-finch-clip-ar-c92dfba664852cd4.png"
+  "https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
+"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
+"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
+ "https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
+"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
+"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
+ "https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
+"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png",
+"https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png"
 )
-
-
-head(top_users)
 
 
 a <- ggplot(top_users, aes(reorder(screen_name, total_tweets), total_tweets, image = image)) +
