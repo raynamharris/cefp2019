@@ -17,32 +17,25 @@ were authored by **111** different particpants.
 
 ![](rtweets_SBN2019_figs/tweet_timeline-1.png)
 
-top 6 favs
-==========
+### top 6 favs
 
-A tibble: 5 x 3
+A tibble: 5 x 1
 ===============
 
-screen\_name text favorite\_count <chr> <chr> <int> 1 SBNTweets
-Congratulations to Elizabeth Adkins-Regan, w… 110 2 AubreyMKelly
-Interested in bizarre animals that defy expe… 71 3 AubreyMKelly Looks
-like I’ll be presenting the world’s ti… 67 4 raynamharris "I’m
-presenting a poster today at @SBNTweet… 62 5 SBNTweets Welcome to
-@amandakrentzel and @wmkenkel, ou… 53
+screen\_name <chr>  
+1 SBNTweets  
+2 AubreyMKelly 3 AubreyMKelly 4 raynamharris 5 SBNTweets
 
-top 6 retweets
-==============
+### top 6 retweets
 
-A tibble: 6 x 3
+A tibble: 6 x 1
 ===============
 
-screen\_name text retweet\_count <chr> <chr> <int> 1 raynamharris "I’m
-presenting a poster today at @SBNTweets… 20 2 SBNTweets Congratulations
-to Elizabeth Adkins-Regan, wi… 19 3 BeccaCalisi Doing something new at
-\#SBN2019 @SBNTweets by… 14 4 wmkenkel Hey \#SBN19 are you interested in
-sex differen… 10 5 trainorlab Today’s contributed talks session had
-amazing… 8 6 AubreyMKelly Interested in bizarre animals that defy expec…
-8
+screen\_name <chr>  
+1 raynamharris 2 SBNTweets  
+3 BeccaCalisi 4 wmkenkel  
+5 trainorlab  
+6 AubreyMKelly
 
 ### Which tweeters had the highest impact?
 
