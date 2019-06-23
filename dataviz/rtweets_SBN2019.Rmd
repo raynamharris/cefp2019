@@ -18,7 +18,7 @@ library("ggtextures")
 
 
 # set default code output to False
-knitr::opts_chunk$set(echo = F)
+knitr::opts_chunk$set(echo = T)
 
 # set figure directory
 knitr::opts_chunk$set(fig.path = 'rtweets_SBN2019_figs/')
