@@ -25,13 +25,13 @@
 
 ### Basic summary
 
-There were a total of **357** tweets with the SBN hashtag. These tweets
-were authored by **115** different particpants.
+There were a total of **377** tweets with the SBN hashtag. These tweets
+were authored by **120** different particpants.
 
     top_users <- rt %>%
         group_by(screen_name) %>%
         summarize(total_tweets = n()) %>%
-      filter(total_tweets > 7) %>%
+      filter(total_tweets > 8) %>%
       arrange(total_tweets)  %>% 
       mutate(image = "https://cdn.pixabay.com/photo/2012/05/02/22/09/bird-46482_960_720.png")  %>% 
       mutate(partials = total_tweets / 2)
@@ -49,9 +49,11 @@ were authored by **115** different particpants.
       theme_light() +
       #theme(axis.text = element_text(size = 8),
       #legend.text = element_text(size = 8)) + 
-      labs(x = NULL, y = "Total number of tweets",
+      labs(x = NULL, y = "Total number of tweets (1 bird = 2 tweets)",
         subtitle  = "Top live tweeters at #SBN2019 #SBN19",
-        caption = "\nSource: Data collected from Twitter's REST API via rtweet")
+        caption = "\nSource: Data collected from Twitter's REST API via rtweet") + 
+      theme(panel.grid.major.x = element_line(colour = "grey"),
+            panel.grid.minor.x = element_line(colour = "grey"))
 
     a
 
@@ -84,7 +86,7 @@ A tibble: 5 x 1
 screen\_name  
 <chr>  
 1 SBNTweets  
-2 AubreyMKelly 3 AubreyMKelly 4 raynamharris 5 DrGlitterbear
+2 AubreyMKelly 3 DrGlitterbear 4 AubreyMKelly 5 raynamharris
 
 ### top 6 retweets
 
@@ -100,7 +102,7 @@ A tibble: 6 x 1
 screen\_name <chr>  
 1 raynamharris 2 SBNTweets  
 3 BeccaCalisi 4 wmkenkel  
-5 AubreyMKelly 6 trainorlab
+5 BeccaCalisi 6 raynamharris
 
 ### Which tweeters had the highest impact?
 
@@ -118,14 +120,14 @@ screen\_name <chr>
     head(impact)
 
     ## # A tibble: 6 x 8
-    ##   screen_name  n_tweets n_fav  n_rt mean_fav mean_rt se_fav se_rt
-    ##   <chr>           <int> <int> <int>    <dbl>   <dbl>  <dbl> <dbl>
-    ## 1 SBNTweets          31   430    55     13.9    1.77   3.69 0.615
-    ## 2 BeccaCalisi        19   235    35     12.4    1.84   2.52 0.810
-    ## 3 trainorlab         19   229    42     12.0    2.21   1.98 0.481
-    ## 4 BalesLab           12   132     8     11      0.67   2.63 0.256
-    ## 5 AubreyMKelly       10   180    12     18      1.2    8.76 0.786
-    ## 6 veenemalab         10   140     3     14      0.3    2.29 0.213
+    ##   screen_name     n_tweets n_fav  n_rt mean_fav mean_rt se_fav se_rt
+    ##   <chr>              <int> <int> <int>    <dbl>   <dbl>  <dbl> <dbl>
+    ## 1 SBNTweets             31   453    55     14.6    1.77   3.72 0.615
+    ## 2 BeccaCalisi           22   300    46     13.6    2.09   2.73 0.792
+    ## 3 trainorlab            19   238    42     12.5    2.21   2.08 0.481
+    ## 4 BalesLab              12   135     8     11.2    0.67   2.76 0.256
+    ## 5 AubreyMKelly          10   204    14     20.4    1.4    8.74 0.884
+    ## 6 KeerthiKrishna3       10    96    11      9.6    1.1    3.26 0.526
 
     #head(impact)
 
@@ -139,14 +141,14 @@ screen\_name <chr>
     head(mean_rt)
 
     ## # A tibble: 6 x 8
-    ##   screen_name     n_tweets n_fav  n_rt mean_fav mean_rt se_fav se_rt
-    ##   <fct>              <int> <int> <int>    <dbl>   <dbl>  <dbl> <dbl>
-    ## 1 SBNTweets             31   430    55     13.9    1.77   3.69 0.615
-    ## 2 BeccaCalisi           19   235    35     12.4    1.84   2.52 0.810
-    ## 3 trainorlab            19   229    42     12.0    2.21   1.98 0.481
-    ## 4 tollkuhn               9   114    23     12.7    2.56   2.09 0.503
-    ## 5 KeerthiKrishna3        8   109    16     13.6    2      3.93 0.732
-    ## 6 CornilLab              7    95    13     13.6    1.86   3.48 0.553
+    ##   screen_name  n_tweets n_fav  n_rt mean_fav mean_rt se_fav se_rt
+    ##   <fct>           <int> <int> <int>    <dbl>   <dbl>  <dbl> <dbl>
+    ## 1 SBNTweets          31   453    55     14.6    1.77   3.72 0.615
+    ## 2 BeccaCalisi        22   300    46     13.6    2.09   2.73 0.792
+    ## 3 trainorlab         19   238    42     12.5    2.21   2.08 0.481
+    ## 4 AubreyMKelly       10   204    14     20.4    1.4    8.74 0.884
+    ## 5 tollkuhn            9   119    23     13.2    2.56   2.16 0.503
+    ## 6 raynamharris        8   152    35     19      4.38   7.67 2.59
 
     b2 <- mean_rt  %>% 
       ggplot(aes(x= screen_name, y = mean_rt, 
@@ -175,14 +177,14 @@ screen\_name <chr>
     head(most_fav)
 
     ## # A tibble: 6 x 8
-    ##   screen_name  n_tweets n_fav  n_rt mean_fav mean_rt se_fav se_rt
-    ##   <fct>           <int> <int> <int>    <dbl>   <dbl>  <dbl> <dbl>
-    ## 1 SBNTweets          31   430    55     13.9    1.77   3.69 0.615
-    ## 2 BeccaCalisi        19   235    35     12.4    1.84   2.52 0.810
-    ## 3 trainorlab         19   229    42     12.0    2.21   1.98 0.481
-    ## 4 BalesLab           12   132     8     11      0.67   2.63 0.256
-    ## 5 AubreyMKelly       10   180    12     18      1.2    8.76 0.786
-    ## 6 veenemalab         10   140     3     14      0.3    2.29 0.213
+    ##   screen_name     n_tweets n_fav  n_rt mean_fav mean_rt se_fav se_rt
+    ##   <fct>              <int> <int> <int>    <dbl>   <dbl>  <dbl> <dbl>
+    ## 1 SBNTweets             31   453    55     14.6    1.77   3.72 0.615
+    ## 2 BeccaCalisi           22   300    46     13.6    2.09   2.73 0.792
+    ## 3 trainorlab            19   238    42     12.5    2.21   2.08 0.481
+    ## 4 BalesLab              12   135     8     11.2    0.67   2.76 0.256
+    ## 5 AubreyMKelly          10   204    14     20.4    1.4    8.74 0.884
+    ## 6 KeerthiKrishna3       10    96    11      9.6    1.1    3.26 0.526
 
     d2 <- most_fav  %>% 
       ggplot(aes( x = screen_name, y = mean_fav, 
@@ -193,14 +195,14 @@ screen\_name <chr>
         theme_light() +
         #theme(axis.text = element_text(size = 8),
         #      legend.text = element_text(size = 8)) +
-      labs(x = NULL, y = NULL,
-        subtitle  = "Top favorited tweeters", 
-        title = " ") 
+      labs(y = "Mean (+/- se) favorites", x = NULL,
+        subtitle  = "Top favorited tweeters") + 
+      theme(panel.grid.major.x = element_line(colour = "grey"))
     d2
 
 ![](rtweets_SBN2019_figs/favorites-1.png)
 
-    plot_grid(a,d2, rel_widths = c(0.65,0.35))
+    plot_grid(a,d2, rel_widths = c(0.6,0.4))
 
 ![](rtweets_SBN2019_figs/combo-1.png)
 
